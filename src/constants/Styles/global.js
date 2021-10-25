@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.6rem;
     overflow-y: scroll;
     color: ${colors.white};
-    background-color: ${colors.black};
+    background-color: ${colors.white};
     padding-bottom: 2rem;
   }
 

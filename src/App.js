@@ -1,14 +1,33 @@
+import Cards from "./components/cards/Cards";
 import GlobalStyle from "./constants/Styles/global";
+import cantileverChair from "./assets/chair.png";
+import comfortHandy from "./assets/image-1169.png";
+import executiveSeat from "./assets/image-3.png";
 
 function App() {
   return (
     <>
-      <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4">
-        <div>1</div>
-        <div class="col-start-3">2</div>
-        <div>3</div>
-        <div>4</div>
-        <div class="row-start-1 col-start-2 col-span-2">5</div>
+      <div className="container mx-auto flex justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-40">
+          <Cards
+            imgSrc={cantileverChair}
+            title="Cantilever chair"
+            code="Code - Y523201"
+            price="$42.0"
+          />
+          <Cards
+            imgSrc={comfortHandy}
+            title="Comfort Handy Craft"
+            code="Code - Z3456"
+            price="$32.0"
+          />
+          <Cards
+            imgSrc={executiveSeat}
+            title="Executive Seat chair"
+            code="Code - A4566"
+            price="$26.0"
+          />
+        </div>
       </div>
       <GlobalStyle />
     </>
