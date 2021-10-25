@@ -8,4 +8,6 @@ export const colors = {
   offNavyBlue: "#3F509E",
   pantonPurple: "#E0D3F5",
   skyBlue: "#F3F9FF",
+  white: "#FFF",
+  black: "#000",
 };
