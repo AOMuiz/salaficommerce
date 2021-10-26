@@ -1,9 +1,5 @@
 const Button = () => {
-  return (
-    <div className="buttonContainer">
-      <p>Button</p>
-    </div>
-  );
+  return <div className="buttonContainer">Button</div>;
 };
 
 export default Button;
