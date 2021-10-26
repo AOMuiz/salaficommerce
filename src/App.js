@@ -3,6 +3,7 @@ import GlobalStyle from "./constants/Styles/global";
 import cantileverChair from "./assets/chair.png";
 import comfortHandy from "./assets/image-1169.png";
 import executiveSeat from "./assets/image-3.png";
+import Button from "./components/Button/Buttons";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
             code="Code - A4566"
             price="$26.0"
           />
+          <Button />
+
         </div>
       </div>
       <GlobalStyle />
