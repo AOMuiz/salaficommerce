@@ -28,10 +28,10 @@ const StyledContainer = styled.div`
   justify-content: space-between;
   margin: 1.5rem;
   transition: 0ms.25sec all ease-in-out;
-  cursor: pointer;
+  /* cursor: pointer;
   &:hover {
     box-shadow: 5px 5px 5px ${colors.skyBlue};
-  }
+  } */
 `;
 
 const ImageContainer = styled.div`
