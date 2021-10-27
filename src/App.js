@@ -4,6 +4,8 @@ import cantileverChair from "./assets/chair.png";
 import comfortHandy from "./assets/image-1169.png";
 import executiveSeat from "./assets/image-3.png";
 import Button from "./components/Button/Buttons";
+import Hero from "./components/hero/Hero";
+import chair from "./assets/sofa.png";
 
 function App() {
   return (
@@ -28,10 +30,15 @@ function App() {
             code="Code - A4566"
             price="$26.0"
           />
-          <Button name="Shop Now" />
-          <Button name="Add To Cart" />
-          <Button name="Update Cart" />
-          <Button name="Sign Up" />
+          <div>
+            <Button name="Shop Now" handleClick="shop now clicked" />
+            <Button name="Add To Cart" />
+            <Button name="Update Cart" />
+            <Button name="Sign Up" />
+          </div>
+          <div>
+            <Hero img={chair} />
+          </div>
         </div>
       </div>
       <GlobalStyle />
