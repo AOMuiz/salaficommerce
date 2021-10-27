@@ -28,8 +28,10 @@ function App() {
             code="Code - A4566"
             price="$26.0"
           />
-          <Button />
-
+          <Button name="Shop Now" />
+          <Button name="Add To Cart" />
+          <Button name="Update Cart" />
+          <Button name="Sign Up" />
         </div>
       </div>
       <GlobalStyle />
