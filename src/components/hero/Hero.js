@@ -6,7 +6,6 @@ const Hero = ({ url }) => {
 
   return (
     <HeroContainer>
-      <SofaImage src={url} alt="" />
       <TextContainer>
         <TextStyleColoured>
           Best Furniture For Your Castle....
@@ -17,6 +16,7 @@ const Hero = ({ url }) => {
           Itaque.
         </TextColouredTwo>
       </TextContainer>
+      <SofaImage src={url} alt="" />
     </HeroContainer>
   );
 };
@@ -25,11 +25,18 @@ export default Hero;
 
 const HeroContainer = styled.div`
   height: 47.8rem;
-  width: 120rem;
+  width: 90vw;
   background-color: #f2f0ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 `;
 
-const SofaImage = styled.img``;
+const SofaImage = styled.img`
+  width: 40rem;
+  height: 40rem;
+  padding: 10px;
+`;
 
 const TextContainer = styled.div``;
 
@@ -45,8 +52,6 @@ const TextStyle = styled.p`
   font-size: 3.3rem;
   line-height: 4.38rem;
   letter-spacing: 0.015em;
-
-  margin: 15.2rem 53.3rem 23.8rem 24.4rem;
 `;
 
 const TextColouredTwo = styled.p`

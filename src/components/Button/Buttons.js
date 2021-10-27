@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { colors } from "../../constants/colors";
 
 const Button = ({ name }) => {
   const handleClick = () => {
@@ -23,9 +22,13 @@ const StyledButton = styled.div`
   &:hover {
     background-color: #fff;
     color: blue;
-    transform: 0.25sec all scale3d(2);
+    transition: 0.25s all ease-in-out;
     box-shadow: 5px 5px 10px rgba(25, 47, 18, 0.3);
   }
+`;
+
+const TomatoButton = styled(StyledButton)`
+  color: tomato;
 `;
 
 export default Button;

@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <div className="container mx-auto flex justify-center">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-40">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-40">
           <Cards
             imgSrc={cantileverChair}
             title="Cantilever chair"
@@ -37,7 +37,7 @@ function App() {
             <Button name="Sign Up" />
           </div>
           <div>
-            <Hero img={chair} />
+            <Hero url={chair} />
           </div>
         </div>
       </div>
