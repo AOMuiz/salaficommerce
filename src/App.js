@@ -4,14 +4,18 @@ import cantileverChair from "./assets/chair.png";
 import comfortHandy from "./assets/image-1169.png";
 import executiveSeat from "./assets/image-3.png";
 import Button from "./components/Button/Buttons";
-import Hero from "./components/hero/Hero";
-import chair from "./assets/sofa.png";
+// import Hero from "./components/hero/Hero";
+// import chair from "./assets/sofa.png";
+// import image from "./assets/image-32.png";
+import NewCard from "./components/cards/NewCard";
+import photo from "./assets/image-15.png";
+import vector from "./assets/vector-1.png";
 
 function App() {
   return (
     <>
       <div className="container mx-auto flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-40">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-40">
           <Cards
             imgSrc={cantileverChair}
             title="Cantilever chair"
@@ -37,8 +41,11 @@ function App() {
             <Button name="Sign Up" />
           </div>
           <div>
-            <Hero url={chair} />
+            <NewCard url3={photo} url4={vector} />
           </div>
+          {/* <div>
+            <Hero url={chair} url2={image} />
+          </div> */}
         </div>
       </div>
       <GlobalStyle />

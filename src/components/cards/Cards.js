@@ -27,11 +27,7 @@ const StyledContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   margin: 1.5rem;
-  transition: 0ms.25sec all ease-in-out;
-  /* cursor: pointer;
-  &:hover {
-    box-shadow: 5px 5px 5px ${colors.skyBlue};
-  } */
+  transition: 0.25s all ease-in-out;
 `;
 
 const ImageContainer = styled.div`

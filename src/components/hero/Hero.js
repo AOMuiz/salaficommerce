@@ -1,16 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import { colors } from "../../constants/colors";
 
-const Hero = ({ url }) => {
-  console.log(url);
-
+const Hero = ({ url, url2 }) => {
   return (
     <HeroContainer>
+      <OtherImage src={url2} alt="" />
       <TextContainer>
         <TextStyleColoured>
           Best Furniture For Your Castle....
         </TextStyleColoured>
-        <TextStyle>New Furniture Collection Trends in 2020</TextStyle>
+        <TextStyle>
+          New Furniture Collection <br /> Trends in 2020
+        </TextStyle>
         <TextColouredTwo>
           Lorem iTextColouredTwosum dolor sit amet consectetur adipisicing elit.
           Itaque.
@@ -26,10 +28,18 @@ export default Hero;
 const HeroContainer = styled.div`
   height: 47.8rem;
   width: 90vw;
-  background-color: #f2f0ff;
+  background-color: ${colors.lightArsh};
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 70px 70px;
+`;
+
+const OtherImage = styled.img`
+  width: 150px;
+  height: 150px;
+  flex-direction: column;
+  align-self: flex-start;
 `;
 
 const SofaImage = styled.img`
