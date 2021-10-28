@@ -25,6 +25,7 @@ const MainContainer = styled.div`
   height: 27rem;
   & :hover {
     background-color: ${colors.white};
+    cursor: pointer;
   }
 `;
 
