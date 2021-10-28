@@ -4,26 +4,35 @@ import { colors } from "../../constants/colors";
 
 const NewCard = ({ url3, url4 }) => {
   return (
-    <NewCardContainer>
-      <LogoContainer>
-        <TheLogo src={url4} alt="" />
-        <TextContainer>price</TextContainer>
-      </LogoContainer>
-      <CardImage src={url3} alt="" />
-    </NewCardContainer>
+    <MainContainer>
+      <NewCardContainer>
+        <LogoContainer>
+          <TheLogo src={url4} alt="" />
+          <TextContainer>Sale</TextContainer>
+        </LogoContainer>
+        <CardImage src={url3} alt="" />
+      </NewCardContainer>
+      <Price>Comfort Handy Craft</Price>
+    </MainContainer>
   );
 };
 
 export default NewCard;
 
-const NewCardContainer = styled.div`
+const MainContainer = styled.div`
+  border: 1px solid ${colors.black};
   width: 36rem;
   height: 27rem;
-  background-color: ${colors.white};
+  & :hover {
+    background-color: ${colors.white};
+  }
+`;
+
+const NewCardContainer = styled.div`
+  background-color: ${colors.lightArsh};
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border: 1px solid ${colors.black};
 `;
 
 const LogoContainer = styled.div`
@@ -52,7 +61,17 @@ const TextContainer = styled.p`
 `;
 
 const CardImage = styled.img`
+  background-color: ${colors.lightArsh};
   width: 200px;
   height: 200px;
   margin: 0px 20px 0px 0px;
+`;
+
+const Price = styled.p`
+  color: ${colors.offBlue};
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
 `;
