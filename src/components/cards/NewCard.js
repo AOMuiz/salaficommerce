@@ -20,7 +20,7 @@ const NewCard = ({ url3, url4 }) => {
 export default NewCard;
 
 const MainContainer = styled.div`
-  border: 1px solid ${colors.black};
+  /* border: 1px solid ${colors.black}; */
   width: 36rem;
   height: 27rem;
   & :hover {
@@ -41,6 +41,9 @@ const LogoContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   position: relative;
+  &:hover {
+    display: none;
+  }
 `;
 
 const TheLogo = styled.img`
@@ -50,6 +53,9 @@ const TheLogo = styled.img`
   margin: 10px 0px 190px 0px;
   transform-origin: 0 0;
   transform: rotate(-2deg);
+  &:hover {
+    display: none;
+  }
 `;
 
 const TextContainer = styled.p`
@@ -59,6 +65,9 @@ const TextContainer = styled.p`
   position: absolute;
   top: 30px;
   left: 15px;
+  &:hover {
+    display: none;
+  }
 `;
 
 const CardImage = styled.img`
