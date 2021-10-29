@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { colors } from "../../constants/colors";
 
 const Button = ({ name }) => {
   const handleClick = () => {
