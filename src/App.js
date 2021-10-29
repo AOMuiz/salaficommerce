@@ -1,5 +1,5 @@
-import Cards from "./components/cards/Cards";
-import GlobalStyle from "./constants/Styles/global";
+import Cards from "./components/cards/Card";
+import GlobalStyle from "./constants/styles/global";
 import cantileverChair from "./assets/chair.png";
 import comfortHandy from "./assets/image-1169.png";
 import executiveSeat from "./assets/image-3.png";

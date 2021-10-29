@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "../../constants/colors";
 
-const Cards = ({ imgSrc, title, code, price }) => {
+const Card = ({ imgSrc, title, code, price }) => {
   return (
     <StyledContainer>
       <ImageContainer>
@@ -11,13 +11,13 @@ const Cards = ({ imgSrc, title, code, price }) => {
       <TextContainer>
         <Title>{title}</Title>
         <StyledCode>{code}</StyledCode>
-        <Price>{price}</Price>
+        <StyledPrice>{price}</StyledPrice>
       </TextContainer>
     </StyledContainer>
   );
 };
 
-export default Cards;
+export default Card;
 
 const StyledContainer = styled.div`
   width: 27rem;
@@ -59,7 +59,7 @@ const StyledCode = styled.p`
   font-size: 1.4rem;
   padding: 12px;
 `;
-const Price = styled.p`
+const StyledPrice = styled.p`
   color: ${colors.offBlue};
   font-size: 1.4rem;
 `;
