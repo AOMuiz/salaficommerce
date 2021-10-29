@@ -4,6 +4,7 @@ import cantileverChair from "./assets/chair.png";
 import comfortHandy from "./assets/image-1169.png";
 import executiveSeat from "./assets/image-3.png";
 import Button from "./components/button";
+import { colors } from "./constants/colors";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
           />
         </div>
         <div>
-          <Button />
+          <Button name="Show more" backgroundColor={colors.primary} />
         </div>
       </div>
       <GlobalStyle />
