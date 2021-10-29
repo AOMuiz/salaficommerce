@@ -3,6 +3,7 @@ import GlobalStyle from "./constants/styles/global";
 import cantileverChair from "./assets/images/cantileverChair.png";
 import comfortHandy from "./assets/images/comfortHandyChair.png";
 import Navbar from "./components/nav";
+import Button from "./components/button";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
             code="Code - Z3456"
             price="$32.0"
           />
+        </div>
+        <div>
+          <Button />
         </div>
       </div>
       <GlobalStyle />
