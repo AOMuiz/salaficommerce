@@ -1,8 +1,8 @@
 import Cards from "./components/cards/Card";
 import GlobalStyle from "./constants/styles/global";
-import cantileverChair from "./assets/chair.png";
-import comfortHandy from "./assets/image-1169.png";
-import executiveSeat from "./assets/image-3.png";
+import cantileverChair from "./assets/images/cantileverChair.png";
+import comfortHandy from "./assets/images/comfortHandyChair.png";
+import executiveSeat from "./assets/images/executiveSeatChair.png";
 
 function App() {
   return (
