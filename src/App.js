@@ -30,10 +30,9 @@ function App() {
             price="$26.0"
           />
         </div>
-        <div>
-          <Button name="Show more" backgroundColor={colors.primary} />
-        </div>
       </div>
+      <Button name="Show more" backgroundColor={colors.offBlue} large />
+      <Button name="Proceed To Checkout" />
       <GlobalStyle />
     </>
   );
