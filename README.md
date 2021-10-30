@@ -58,33 +58,33 @@ This project using relative unit based 10px. so you can use `1rem` which means `
 
 ```
 |-- src/
-    |-- components/
-    |-- shared/
-        |-- assets/
-            |-- fonts/
-            |-- icon/
-            |-- images/
-        |-- components/
-            |-- Loader/
-        |-- constants/
-        |-- helpers/
-        |-- hooks/
-        |-- styles/
-            |-- base/
-            |-- themes/
-    |-- App.js
-    |-- index.js
-    |-- serviceWorker.js
-    |-- setupTests.js
+  |-- assets/
+    |-- icons/
+    |-- images/
+      |-- index.js/
+  |-- components/
+  |-- constants/
+  |-- navigation/
+  |-- redux/
+  |-- screens/
+  |-- utils/
+    |-- Helpers/
+    |-- Hooks/
+|-- App.js
+|-- index.js
+|-- index.css
+|-- tailwind.config.js
+|-- serviceWorker.js
+|-- setupTests.js
 ```
 
-- `components` : Folder to put all non shared Component
-- `shared/assets` : Folder to put assets like fonts, icons and images
-- `shared/components`: Folder to put all shared Component
-- `shared/constants` : Folder to put all of ours constant like `api url`, `mock`, `action types` and all others constant data that dont changed
-- `shared/helpers` : Folder to put our helpers function like Consume API and formating data or others helpers
-- `shared/hooks` : Folder to put all of ours custom hooks/logic for component
-- `styles` : Folder to put our Styled Component that reusable
+- `components` : Folder to put all non shared Component.
+- `screens` : Folder to put and compile each component to form a screen.
+- `assets` : Folder to put assets like icons and images.
+- `constants` : Folder to put all of ours constant like `api url`, `mock`, `action types` and all others constant data that dont changed
+- `utils/helpers` : Folder to put our helpers function like Consume API and formating data or others helpers
+- `utils/hooks` : Folder to put all of ours custom hooks/logic for component
+- `constants/styles` : Folder to put our Styled Component that are reusable such as global styles, grid.
 
 ## Style Utilities
 
