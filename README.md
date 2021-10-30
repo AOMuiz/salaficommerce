@@ -58,24 +58,23 @@ This project using relative unit based 10px. so you can use `1rem` which means `
 
 ```
 |-- src/
-    |-- components/
-    |-- shared/
-        |-- assets/
-            |-- fonts/
-            |-- icon/
-            |-- images/
-        |-- components/
-            |-- Loader/
-        |-- constants/
-        |-- helpers/
-        |-- hooks/
-        |-- styles/
-            |-- base/
-            |-- themes/
-    |-- App.js
-    |-- index.js
-    |-- serviceWorker.js
-    |-- setupTests.js
+  |-- assets/
+  |-- images/
+    |-- index.js/
+  |-- components/
+  |-- constants/
+  |-- navigation/
+  |-- redux/
+  |-- screens/
+  |-- utils/
+    |-- Helpers/
+    |-- Hooks/
+|-- App.js
+|-- index.js
+|-- index.css
+|-- tailwind.config.js
+|-- serviceWorker.js
+|-- setupTests.js
 ```
 
 - `components` : Folder to put all non shared Component
