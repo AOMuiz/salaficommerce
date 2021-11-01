@@ -3,6 +3,7 @@ import GlobalStyle from "./constants/styles/global";
 import cantileverChair from "./assets/chair.png";
 import comfortHandy from "./assets/image-1169.png";
 import executiveSeat from "./assets/image-3.png";
+import executiveChair from "./assets/image-1.png";
 import Button from "./components/button";
 import { colors } from "./constants/colors";
 
