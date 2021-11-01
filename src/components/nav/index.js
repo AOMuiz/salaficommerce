@@ -113,4 +113,5 @@ const StyledInput = styled.input`
 
 const StyledNavbarListItem = styled(StyledListItem)`
   color: ${colors.black};
+  font-family: "Lato", sans-serif;
 `;
