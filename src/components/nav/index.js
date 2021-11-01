@@ -8,6 +8,7 @@ import { ReactComponent as Envelope } from "../../assets/icon/envelope-alt.svg";
 import { ReactComponent as Cart } from "../../assets/icon/cart-24-regular.svg";
 import { ReactComponent as PhoneCall } from "../../assets/icon/phone-call.svg";
 import { ReactComponent as Search } from "../../assets/icon/uil_search.svg";
+import { ReactComponent as Heart } from "../../assets/icon/uil_heart-alt.svg";
 
 const Navbar = () => {
   return (
@@ -32,10 +33,11 @@ const Navbar = () => {
           <StyledListItem>
             Login <User />
           </StyledListItem>
-          <StyledListItem>Wishlist</StyledListItem>
           <StyledListItem>
-            <Cart />
-            Cart
+            Wishlist <Heart />
+          </StyledListItem>
+          <StyledListItem>
+            Cart <Cart />
           </StyledListItem>
         </StyledList>
       </StyledHeadingBar>
@@ -65,11 +67,10 @@ export default Navbar;
 
 const StyledHeadingBar = styled.div`
   background-color: ${colors.secondary};
-  color: ${colors.white};
+  color: "${colors.white}";
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1.4rem;
   font-weight: 600;
 `;
 const StyledList = styled.ul`
@@ -93,9 +94,10 @@ const StyledNavBar = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding-top: 1rem;
 `;
 const StyledLogo = styled.div`
-  font-size: 34px;
+  font-size: 3.4rem;
   font-weight: 700;
 `;
 const StyledNavForm = styled.div`
@@ -112,6 +114,6 @@ const StyledInput = styled.input`
 `;
 
 const StyledNavbarListItem = styled(StyledListItem)`
-  color: ${colors.black};
+  color: ${colors.lightBlack};
   font-family: "Lato", sans-serif;
 `;

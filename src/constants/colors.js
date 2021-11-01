@@ -10,4 +10,5 @@ export const colors = {
   skyBlue: "#F3F9FF",
   white: "#FFF",
   black: "#000",
+  lightBlack: "#0D0E43",
 };
