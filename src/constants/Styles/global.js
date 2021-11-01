@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto' sans-serif;
     font-size: 1.6rem;
     overflow-y: scroll;
-    color: ${colors.white};
+    color: ${colors.primary};
     background-color: ${colors.white};
     padding-bottom: 2rem;
   }
