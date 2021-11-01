@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
 
     /* 768px */
     @media screen and (max-width: 48em) {
