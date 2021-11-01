@@ -85,7 +85,7 @@ const StyledNavBar = styled.div`
   background-color: ${colors.white};
   color: ${colors.black};
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 `;
 const StyledLogo = styled.div`
