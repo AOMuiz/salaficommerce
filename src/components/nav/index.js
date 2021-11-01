@@ -10,33 +10,50 @@ import { ReactComponent as PhoneCall } from "../../assets/icon/phone-call.svg";
 
 const Navbar = () => {
   return (
-    <StyledHeadingBar>
-      <StyledList>
-        <StyledListItem>
-          <Envelope /> salafiDev@gmail.com
-        </StyledListItem>
-        <StyledListItem>
-          <PhoneCall />
-          (12345)67890
-        </StyledListItem>
-      </StyledList>
-      <StyledList>
-        <StyledListItem>
-          English <Chevron />
-        </StyledListItem>
-        <StyledListItem>
-          USD <Chevron />
-        </StyledListItem>
-        <StyledListItem>
-          Login <User />
-        </StyledListItem>
-        <StyledListItem>Wishlist</StyledListItem>
-        <StyledListItem>
-          <Cart />
-          Cart
-        </StyledListItem>
-      </StyledList>
-    </StyledHeadingBar>
+    <>
+      <StyledHeadingBar>
+        <StyledList>
+          <StyledListItem>
+            <Envelope /> salafiDev@gmail.com
+          </StyledListItem>
+          <StyledListItem>
+            <PhoneCall />
+            (12345)67890
+          </StyledListItem>
+        </StyledList>
+        <StyledList>
+          <StyledListItem>
+            English <Chevron />
+          </StyledListItem>
+          <StyledListItem>
+            USD <Chevron />
+          </StyledListItem>
+          <StyledListItem>
+            Login <User />
+          </StyledListItem>
+          <StyledListItem>Wishlist</StyledListItem>
+          <StyledListItem>
+            <Cart />
+            Cart
+          </StyledListItem>
+        </StyledList>
+      </StyledHeadingBar>
+      <StyledNavBar>
+        <StyledLogo>Hekto</StyledLogo>
+        <StyledNavForm>
+          <StyledInput></StyledInput>
+        </StyledNavForm>
+        <StyledList>
+          <StyledNavbarListItem>
+            Home <Chevron />
+          </StyledNavbarListItem>
+          <StyledNavbarListItem>Pages</StyledNavbarListItem>
+          <StyledNavbarListItem>Products</StyledNavbarListItem>
+          <StyledNavbarListItem>Shop</StyledNavbarListItem>
+          <StyledNavbarListItem>Contact</StyledNavbarListItem>
+        </StyledList>
+      </StyledNavBar>
+    </>
   );
 };
 
@@ -48,7 +65,6 @@ const StyledHeadingBar = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1.4rem;
 `;
 const StyledList = styled.ul`
   color: ${colors.white};
@@ -63,4 +79,24 @@ const StyledListItem = styled.li`
   &:hover {
     cursor: pointer;
   }
+`;
+
+const StyledNavBar = styled.div`
+  background-color: ${colors.white};
+  color: ${colors.black};
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
+const StyledLogo = styled.div`
+  font-size: 34px;
+  font-weight: 700;
+`;
+const StyledNavForm = styled.div``;
+const StyledInput = styled.input`
+  border: 2px solid #e7e6ef;
+`;
+
+const StyledNavbarListItem = styled(StyledListItem)`
+  color: ${colors.black};
 `;
