@@ -33,7 +33,6 @@ function App() {
       </div>
       <Button name="Show more" color={colors.offBlue} />
       <Button name="Proceed To Checkout" />
-
       <Button
         name="This is a long cart and it is even longer"
         color={colors.offPurple}
