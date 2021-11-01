@@ -49,6 +49,7 @@ const StyledHeadingBar = styled.div`
   justify-content: space-around;
   align-items: center;
   padding: 1.4rem;
+  font-weight: 600;
 `;
 const StyledList = styled.ul`
   color: ${colors.white};
