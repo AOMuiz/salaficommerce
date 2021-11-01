@@ -7,6 +7,7 @@ import { ReactComponent as Chevron } from "../../assets/icon/chevron-down.svg";
 import { ReactComponent as Envelope } from "../../assets/icon/envelope-alt.svg";
 import { ReactComponent as Cart } from "../../assets/icon/cart-24-regular.svg";
 import { ReactComponent as PhoneCall } from "../../assets/icon/phone-call.svg";
+import { ReactComponent as Search } from "../../assets/icon/uil_search.svg";
 
 const Navbar = () => {
   return (
@@ -41,7 +42,10 @@ const Navbar = () => {
       <StyledNavBar>
         <StyledLogo>Hekto</StyledLogo>
         <StyledNavForm>
-          <StyledInput></StyledInput>
+          <StyledInput />
+          <StyledSearch>
+            <Search />
+          </StyledSearch>
         </StyledNavForm>
         <StyledList>
           <StyledNavbarListItem>
@@ -92,7 +96,15 @@ const StyledLogo = styled.div`
   font-size: 34px;
   font-weight: 700;
 `;
-const StyledNavForm = styled.div``;
+const StyledNavForm = styled.div`
+  display: flex;
+`;
+const StyledSearch = styled.div`
+  background-color: ${colors.primary};
+  display: flex;
+  align-items: center;
+  padding: 3px;
+`;
 const StyledInput = styled.input`
   border: 2px solid #e7e6ef;
 `;
