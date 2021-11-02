@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "../../constants/colors";
 
-const Button = ({ name, color = colors.primary, large = " 100%" }) => {
+const Button = ({ name, color = colors.skyBlue }) => {
   const handleClick = () => {
     console.log("button clicked");
   };
@@ -15,6 +15,7 @@ const Button = ({ name, color = colors.primary, large = " 100%" }) => {
 };
 
 const StyledButton = styled.div`
+  color: white;
   display: inline-flex;
   padding: 1rem 4rem;
   background-color: ${(props) => props.color};
