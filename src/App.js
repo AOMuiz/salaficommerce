@@ -1,19 +1,18 @@
 import Cards from "./components/cards/Card";
 import GlobalStyle from "./constants/styles/global";
-// import FeatureCard from "./components/cards/FeatureCard";
 import { colors } from "./constants/colors";
 import cantileverChair from "./assets/images/cantileverChair.png";
 import comfortHandy from "./assets/images/comfortHandyChair.png";
 import Navbar from "./components/nav";
 import Button from "./components/button";
-import { colors } from "./constants/colors";
+import lamp from "./assets/lamp.png";
 import Hero from "./components/hero";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Hero imgSrc={lamp} text="Best Furniture For Your Castle..." />
       <div className="container mx-auto flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-40">
           <Cards
@@ -36,13 +35,9 @@ function App() {
         name="This is a long cart and it is even longer"
         color={colors.offPurple}
       />
-<<<<<<< HEAD
       {/* <div>
         <FeatureCard url={image} />
       </div> */}
-=======
-      <div></div>
->>>>>>> 8ceb183 ([kjimoh] added slight changes to hero)
       <GlobalStyle />
     </>
   );

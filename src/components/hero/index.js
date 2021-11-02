@@ -1,18 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import lamp from "../../assets/lamp.png";
 import armchair from "../../assets/armchair.png";
 import { colors } from "../../constants/colors";
 
-export const Hero = () => {
+export const Hero = ({ imgSrc, text }) => {
   return (
     <StyledHero>
       <StyledTextBoxDiv>
         <StyledImageBox1>
-          <StyledLamp src={lamp} alt="" />
+          <StyledLamp src={imgSrc} alt="" />
         </StyledImageBox1>
         <StyledHeaderText>
-          <StyledBest>Best Furniture For Your Castle...</StyledBest>
+          <StyledBest>{text}</StyledBest>
           <StyledNew>
             New Furniture Collection <br />
             Trends in 2020.

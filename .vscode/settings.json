@@ -1,5 +1,6 @@
 {
-    "scm.inputFontSize": 16,
-    "debug.console.fontSize": 16,
-    "terminal.integrated.fontSize": 16
+    "scm.inputFontSize": 15,
+    "debug.console.fontSize": 15,
+    "terminal.integrated.fontSize": 15,
+    "tailwindCSS.rootFontSize": 15
 }
