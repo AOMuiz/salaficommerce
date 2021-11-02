@@ -1,12 +1,12 @@
 import Cards from "./components/cards/Card";
 import GlobalStyle from "./constants/styles/global";
+// import FeatureCard from "./components/cards/FeatureCard";
+import { colors } from "./constants/colors";
 import cantileverChair from "./assets/images/cantileverChair.png";
 import comfortHandy from "./assets/images/comfortHandyChair.png";
 import Navbar from "./components/nav";
 import Button from "./components/button";
 import { colors } from "./constants/colors";
-import FeatureCard from "./components/cards/FeatureCard";
-import image from "./assets/img-1.png";
 
 function App() {
   return (
@@ -34,9 +34,9 @@ function App() {
         name="This is a long cart and it is even longer"
         color={colors.offPurple}
       />
-      <div>
+      {/* <div>
         <FeatureCard url={image} />
-      </div>
+      </div> */}
       <GlobalStyle />
     </>
   );
