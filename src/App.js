@@ -36,9 +36,13 @@ function App() {
         name="This is a long cart and it is even longer"
         color={colors.offPurple}
       />
+<<<<<<< HEAD
       {/* <div>
         <FeatureCard url={image} />
       </div> */}
+=======
+      <div></div>
+>>>>>>> 8ceb183 ([kjimoh] added slight changes to hero)
       <GlobalStyle />
     </>
   );
