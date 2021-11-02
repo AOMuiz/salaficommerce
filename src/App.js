@@ -6,6 +6,8 @@ import executiveSeat from "./assets/image-3.png";
 import executiveChair from "./assets/image-1.png";
 import Button from "./components/button";
 import { colors } from "./constants/colors";
+import FeatureCard from "./components/cards/FeatureCard";
+import image from "./assets/img-1.png";
 
 function App() {
   return (
@@ -38,7 +40,9 @@ function App() {
         name="This is a long cart and it is even longer"
         color={colors.offPurple}
       />
-
+      <div>
+        <FeatureCard url={image} />
+      </div>
       <GlobalStyle />
     </>
   );
