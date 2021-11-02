@@ -6,7 +6,8 @@ import cantileverChair from "./assets/images/cantileverChair.png";
 import comfortHandy from "./assets/images/comfortHandyChair.png";
 import Navbar from "./components/nav";
 import Button from "./components/button";
-// import image from "./assets/images/img-1.png";
+import OfferCard from "./components/cards/HoverCard";
+import vector from "./assets/images/group-1.png";
 
 function App() {
   return (
@@ -34,9 +35,17 @@ function App() {
         name="This is a long cart and it is even longer"
         color={colors.offPurple}
       />
-      {/* <div>
-        <FeatureCard url={image} />
-      </div> */}
+
+      <OfferCard
+        url={vector}
+        title="24/7 Support"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+      />
+      <OfferCard
+        url={vector}
+        title="24/7 Support"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+      />
       <GlobalStyle />
     </>
   );
