@@ -1,17 +1,16 @@
 import Cards from "./components/cards/Card";
 import GlobalStyle from "./constants/styles/global";
-import cantileverChair from "./assets/chair.png";
-import comfortHandy from "./assets/image-1169.png";
-import executiveSeat from "./assets/image-3.png";
-import executiveChair from "./assets/image-1.png";
-import Button from "./components/button";
+
 import { colors } from "./constants/colors";
-import FeatureCard from "./components/cards/FeatureCard";
-import image from "./assets/img-1.png";
+import cantileverChair from "./assets/images/cantileverChair.png";
+import comfortHandy from "./assets/images/comfortHandyChair.png";
+import Navbar from "./components/nav";
+import Button from "./components/button";
 
 function App() {
   return (
     <>
+      <Navbar />
       <div className="container mx-auto flex justify-center">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-40">
           <Cards
@@ -25,12 +24,6 @@ function App() {
             title="Comfort Handy Craft"
             code="Code - Z3456"
             price="$32.0"
-          />
-          <Cards
-            imgSrc={executiveSeat}
-            title="Executive Seat chair"
-            code="Code - A4566"
-            price="$26.0"
           />
         </div>
       </div>

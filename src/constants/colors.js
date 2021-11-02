@@ -9,6 +9,6 @@ export const colors = {
   pantonPurple: "#E0D3F5",
   skyBlue: "#F3F9FF",
   white: "#FFF",
-  black: "#000",
   lightArsh: "#E5E5E5",
+  lightBlack: "#0D0E43",
 };
