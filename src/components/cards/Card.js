@@ -27,6 +27,7 @@ const StyledContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   margin: 1.5rem;
+  font-family: "Lato", "san-serif";
 `;
 
 const ImageContainer = styled.div`
