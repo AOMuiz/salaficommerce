@@ -28,8 +28,8 @@ const CardContainer = styled.div`
   align-items: center;
   cursor: pointer;
 
-  & :hover {
-    transition: 0.5s ease-in-out;
+  &:hover {
+    transition: all 0.25s ease-in-out;
     box-shadow: 0.5rem 0.5rem 1rem ${colors.offBlue};
   }
 `;
