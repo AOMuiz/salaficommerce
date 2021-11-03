@@ -57,5 +57,5 @@ const Title = styled.div`
 
 const SubTitle = styled.div`
   color: ${colors.white};
-  padding: 3rem 2rem 0rem 2rem;
+  padding: 4rem 2rem 0rem 2rem;
 `;
