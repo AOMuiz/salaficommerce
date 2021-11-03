@@ -3,9 +3,8 @@ import GlobalStyle from "./constants/styles/global";
 import cantileverChair from "./assets/images/cantileverChair.png";
 import comfortHandy from "./assets/images/comfortHandyChair.png";
 import Navbar from "./components/nav";
-import ShopGridCard from "./components/cards/ShopGridCard";
-import bag from "./assets/images/bag.png";
-import earpiece from "./assets/images/earpiece1.png";
+import OfferCard from "./components/cards/OfferCard";
+import vector from "./assets/icon/phone-call.svg";
 
 function App() {
   return (
@@ -26,22 +25,13 @@ function App() {
             price="$32.0"
           />
         </div>
+        <OfferCard
+          url={vector}
+          title="24/7 till now"
+          subtitle="this is a caed that denotes the offer of the customer"
+        />
       </div>
       <GlobalStyle />
-      <div>
-        <ShopGridCard
-          url={bag}
-          name="A beautiful bag"
-          price="$26,000"
-          price2="$24,000"
-        />
-        <ShopGridCard
-          url={earpiece}
-          name="A beautiful earpiece"
-          price="$16,000"
-          price2="$14,000"
-        />
-      </div>
     </>
   );
 }
