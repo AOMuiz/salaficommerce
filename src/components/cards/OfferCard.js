@@ -19,18 +19,20 @@ const OfferCard = ({ url, title, subtitle }) => {
 export default OfferCard;
 
 const CardContainer = styled.div`
-  width: 27rem;
-  height: 32rem;
-  background-color: ${colors.lightBlack};
+  width: 25rem;
+  height: 30rem;
+  background-color: ${colors.white};
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+  margin-top: 1rem;
 
   &:hover {
     transition: all 0.25s ease-in-out;
-    box-shadow: 0.5rem 0.5rem 1rem ${colors.offBlue};
+    box-shadow: 0.5rem 0.5rem 1rem ${colors.skyBlue};
   }
 `;
 
@@ -42,7 +44,7 @@ const ImageContainer = styled.div`
 const Image = styled.img`
   width: 12rem;
   height: 12rem;
-  padding-bottom: 4rem;
+  padding: 3rem 0rem 4rem 0rem;
 `;
 
 const TextContiner = styled.div`
@@ -51,11 +53,16 @@ const TextContiner = styled.div`
 `;
 
 const Title = styled.div`
-  color: ${colors.white};
   align-self: center;
+  color: ${colors.offBlue};
+  font-size: 2.1rem;
 `;
 
 const SubTitle = styled.div`
-  color: ${colors.white};
-  padding: 4rem 2rem 0rem 2rem;
+  padding: 1rem 2.5rem 0rem 2.5rem;
+  color: ${colors.offBlue};
+  text-align: center;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 16px;
 `;
