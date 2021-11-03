@@ -4,7 +4,9 @@ import cantileverChair from "./assets/images/cantileverChair.png";
 import comfortHandy from "./assets/images/comfortHandyChair.png";
 import Navbar from "./components/nav";
 import OfferCard from "./components/cards/OfferCard";
-import vector from "./assets/icon/phone-call.svg";
+import vector from "./assets/icon/group-1.svg";
+import vector2 from "./assets/icon/group-2.svg";
+import cashback from "./assets/icon/cashback-1.svg";
 
 function App() {
   return (
@@ -25,11 +27,23 @@ function App() {
             price="$32.0"
           />
         </div>
-        <OfferCard
-          url={vector}
-          title="24/7 till now"
-          subtitle="this is a caed that denotes the offer of the customer"
-        />
+        <div>
+          <OfferCard
+            url={vector}
+            title="24/7 Support"
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+          />
+          <OfferCard
+            url={vector2}
+            title="24/7 Support"
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+          />
+          <OfferCard
+            url={cashback}
+            title="24/7 Support"
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+          />
+        </div>
       </div>
       <GlobalStyle />
     </>
