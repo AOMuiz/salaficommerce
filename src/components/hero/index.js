@@ -3,47 +3,53 @@ import styled from "styled-components";
 import { colors } from "../../constants/colors";
 import Button from "../../components/button";
 
-export const Hero = ({
-  children,
-  lampImgSrc,
-  armChairImgSrc,
-  text,
-  title,
-  subTitle,
-}) => {
+export const Hero = ({ lampImgSrc, armChairImgSrc, text, title, subTitle }) => {
   return (
-    <StyledHero>
-      <StyledTextBoxDiv>
-        <StyledImageBox1>
-          <StyledLamp src={lampImgSrc} alt="" />
-        </StyledImageBox1>
-        <StyledHeaderText>
-          <StyledBest>{text}</StyledBest>
-          <StyledNew>{title}</StyledNew>
-          <StyledP>{subTitle}</StyledP>
-          <Button name="Shop Now" color={colors.primary} />
-        </StyledHeaderText>
-      </StyledTextBoxDiv>
-      <StyledImageBox2Div1>
-        <StyledImageBox2Div2>
-          <StyledImageBox2>
-            <StyledArmChair src={armChairImgSrc} alt="" />
-            <StyledPercentOff>50% Off</StyledPercentOff>
-          </StyledImageBox2>
-        </StyledImageBox2Div2>
-      </StyledImageBox2Div1>
-    </StyledHero>
+    <>
+      <StyledContent>
+        <div className="flex flex-row">
+          <StyledTextBoxDiv>
+            <StyledImageBox1>
+              <StyledLamp src={lampImgSrc} alt="" />
+            </StyledImageBox1>
+            <StyledHeaderText>
+              <StyledBest>{text}</StyledBest>
+              <StyledNew>{title}</StyledNew>
+              <StyledP>{subTitle}</StyledP>
+              <Button name="Shop Now" color={colors.primary} />
+            </StyledHeaderText>
+          </StyledTextBoxDiv>
+
+          <StyledImageBox2Div1>
+            <StyledImageBox2Div2>
+              <StyledImageBox2>
+                <StyledArmChair src={armChairImgSrc} alt="" />
+                <StyledPercentOff>50% Off</StyledPercentOff>
+              </StyledImageBox2>
+            </StyledImageBox2Div2>
+          </StyledImageBox2Div1>
+        </div>
+
+        <div className="flex flex-row justify-around">
+          <StyledDot></StyledDot>
+          <StyledDot></StyledDot>
+          <StyledDot></StyledDot>
+        </div>
+      </StyledContent>
+    </>
   );
 };
 
 export default Hero;
 
-const StyledHero = styled.div`
+const StyledContent = styled.div`
   height: 30rem;
   background-color: ${colors.lightash};
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  align-content: flex-start;
 `;
 
 const StyledLamp = styled.img`
@@ -68,6 +74,7 @@ const StyledImageBox2 = styled.div`
   width: 20rem;
   height: 20rem;
   display: flex;
+  white-space: no-wrap;
 `;
 
 const StyledImageBox2Div1 = styled.div`
@@ -118,4 +125,13 @@ const StyledNew = styled(StyledP)`
 
 const StyledBest = styled(StyledP)`
   color: ${colors.primary};
+`;
+
+const StyledDot = styled.div`
+  margin: 0.3rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 4rem 4rem 4rem 4rem;
+  border: 0.1rem solid ${colors.primary};
+  background-color: ${colors.white};
 `;
