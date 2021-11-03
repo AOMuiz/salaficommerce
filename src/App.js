@@ -3,6 +3,8 @@ import GlobalStyle from "./constants/styles/global";
 import cantileverChair from "./assets/images/cantileverChair.png";
 import comfortHandy from "./assets/images/comfortHandyChair.png";
 import Navbar from "./components/nav";
+import OfferCard from "./components/cards/OfferCard";
+import vector from "./assets/icon/phone-call.svg";
 
 function App() {
   return (
@@ -23,6 +25,11 @@ function App() {
             price="$32.0"
           />
         </div>
+        <OfferCard
+          url={vector}
+          title="24/7 till now"
+          subtitle="this is a caed that denotes the offer of the customer"
+        />
       </div>
       <GlobalStyle />
     </>
