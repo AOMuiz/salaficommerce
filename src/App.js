@@ -6,13 +6,20 @@ import comfortHandy from "./assets/images/comfortHandyChair.png";
 import Navbar from "./components/nav";
 import Button from "./components/button";
 import lamp from "./assets/lamp.png";
+import armchair from "./assets/armchair.png";
 import Hero from "./components/hero";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero imgSrc={lamp} text="Best Furniture For Your Castle..." />
+      <Hero
+        lampImgSrc={lamp}
+        armChairImgSrc={armchair}
+        text="Best Furniture For Your Castle..."
+        title="New Furniture Collection Trends in 2020."
+        subTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labor illum veritatis, repudiandae eligendi."
+      />
       <div className="container mx-auto flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-40">
           <Cards
@@ -35,9 +42,6 @@ function App() {
         name="This is a long cart and it is even longer"
         color={colors.offPurple}
       />
-      {/* <div>
-        <FeatureCard url={image} />
-      </div> */}
       <GlobalStyle />
     </>
   );

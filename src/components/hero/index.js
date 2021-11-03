@@ -1,35 +1,34 @@
 import React from "react";
 import styled from "styled-components";
-import armchair from "../../assets/armchair.png";
 import { colors } from "../../constants/colors";
+import Button from "../../components/button";
 
-export const Hero = ({ imgSrc, text }) => {
+export const Hero = ({
+  children,
+  lampImgSrc,
+  armChairImgSrc,
+  text,
+  title,
+  subTitle,
+}) => {
   return (
     <StyledHero>
       <StyledTextBoxDiv>
         <StyledImageBox1>
-          <StyledLamp src={imgSrc} alt="" />
+          <StyledLamp src={lampImgSrc} alt="" />
         </StyledImageBox1>
         <StyledHeaderText>
           <StyledBest>{text}</StyledBest>
-          <StyledNew>
-            New Furniture Collection <br />
-            Trends in 2020.
-          </StyledNew>
-          <StyledP>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-            illum veritatis,
-            <br /> repudiandae eligendi quibusdam eius.
-          </StyledP>
+          <StyledNew>{title}</StyledNew>
+          <StyledP>{subTitle}</StyledP>
+          <Button name="Shop Now" color={colors.primary} />
         </StyledHeaderText>
       </StyledTextBoxDiv>
       <StyledImageBox2Div1>
         <StyledImageBox2Div2>
           <StyledImageBox2>
-            <StyledArmChair src={armchair} alt="" />
-            <StyledPercentOff>
-              {/* <p className="text-xs">50% Off</p> */}
-            </StyledPercentOff>
+            <StyledArmChair src={armChairImgSrc} alt="" />
+            <StyledPercentOff>50% Off</StyledPercentOff>
           </StyledImageBox2>
         </StyledImageBox2Div2>
       </StyledImageBox2Div1>
@@ -52,6 +51,7 @@ const StyledLamp = styled.img`
 `;
 const StyledHeaderText = styled.div`
   justify-self: center;
+  width: 40rem;
 `;
 const StyledArmChair = styled.img`
   width: 100%;
@@ -80,11 +80,16 @@ const StyledImageBox2Div1 = styled.div`
 const StyledPercentOff = styled.div`
   display: flex;
   align-items: center;
-  border-radius: 100% 50% 60% 95%;
+  justify-content: space-around;
+  border-radius: 7rem 6rem 6rem 4rem;
   background-color: #00c1fe;
-  width: 6rem;
+  width: 5rem;
   height: 5rem;
+  font-size: 1rem;
+  padding: 2rem;
+  color: ${colors.white};
 `;
+
 const StyledImageBox2Div2 = styled.div`
   width: 22rem;
   height: 22rem;
