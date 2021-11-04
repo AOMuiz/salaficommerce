@@ -5,6 +5,7 @@ import comfortHandy from "./assets/images/comfortHandyChair.png";
 import Navbar from "./components/nav";
 import FashionItemCard from "./components/cards/FashionItemCard";
 import image from "./assets/images/rect.png";
+import image2 from "./assets/images/rect-2.png";
 
 function App() {
   return (
@@ -31,8 +32,19 @@ function App() {
         <FashionItemCard
           img={image}
           title="My Chair"
-          price="$200"
-          subtitle="This  is achair that was designed to be sat upon"
+          price1="$200"
+          price2="$100"
+          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
+           in est adipiscing in phasellus non in justo."
+        />
+
+        <FashionItemCard
+          img={image2}
+          title="My Room"
+          price1="$2,000"
+          price2="$1,000"
+          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
+           in est adipiscing in phasellus non in justo."
         />
       </div>
     </>
