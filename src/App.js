@@ -3,6 +3,8 @@ import GlobalStyle from "./constants/styles/global";
 import cantileverChair from "./assets/images/cantileverChair.png";
 import comfortHandy from "./assets/images/comfortHandyChair.png";
 import Navbar from "./components/nav";
+import FashionItemCard from "./components/cards/FashionItemCard";
+import image from "./assets/images/rect.png";
 
 function App() {
   return (
@@ -25,6 +27,14 @@ function App() {
         </div>
       </div>
       <GlobalStyle />
+      <div>
+        <FashionItemCard
+          img={image}
+          title="My Chair"
+          price="$200"
+          subtitle="This  is achair that was designed to be sat upon"
+        />
+      </div>
     </>
   );
 }
