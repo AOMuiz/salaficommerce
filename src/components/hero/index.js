@@ -7,18 +7,16 @@ export const Hero = ({ lampImgSrc, armChairImgSrc, text, title, subTitle }) => {
   return (
     <>
       <StyledContent>
-        <div className="flex flex-row">
-          <StyledTextBoxDiv>
-            <StyledImageBox1>
-              <StyledLamp src={lampImgSrc} alt="" />
-            </StyledImageBox1>
-            <StyledHeaderText>
-              <StyledBest>{text}</StyledBest>
-              <StyledNew>{title}</StyledNew>
-              <StyledP>{subTitle}</StyledP>
-              <Button name="Shop Now" color={colors.primary} />
-            </StyledHeaderText>
-          </StyledTextBoxDiv>
+        <StyledTextBoxDiv>
+          <StyledImageBox1>
+            <StyledLamp src={lampImgSrc} alt="" />
+          </StyledImageBox1>
+          <StyledHeaderText>
+            <StyledBest>{text}</StyledBest>
+            <StyledNew>{title}</StyledNew>
+            <StyledP className="mb-4">{subTitle}</StyledP>
+            <Button name="Shop Now" color={colors.primary} />
+          </StyledHeaderText>
 
           <StyledImageBox2Div1>
             <StyledImageBox2Div2>
@@ -28,7 +26,7 @@ export const Hero = ({ lampImgSrc, armChairImgSrc, text, title, subTitle }) => {
               </StyledImageBox2>
             </StyledImageBox2Div2>
           </StyledImageBox2Div1>
-        </div>
+        </StyledTextBoxDiv>
 
         <div className="flex flex-row justify-around">
           <StyledDot></StyledDot>
@@ -47,9 +45,8 @@ const StyledContent = styled.div`
   background-color: ${colors.lightash};
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  align-content: flex-start;
 `;
 
 const StyledLamp = styled.img`
@@ -74,13 +71,20 @@ const StyledImageBox2 = styled.div`
   width: 20rem;
   height: 20rem;
   display: flex;
-  white-space: no-wrap;
 `;
 
 const StyledImageBox2Div1 = styled.div`
   width: 25rem;
   height: 22rem;
   border-radius: 50rem;
+  background-color: #ecd2fa59;
+`;
+
+const StyledImageBox2Div2 = styled.div`
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50rem;
+  align-self: flex-start;
   background-color: #ecd2fa59;
 `;
 
@@ -97,23 +101,16 @@ const StyledPercentOff = styled.div`
   color: ${colors.white};
 `;
 
-const StyledImageBox2Div2 = styled.div`
-  width: 22rem;
-  height: 22rem;
-  border-radius: 50rem;
-  align-self: flex-start;
-  background-color: #ecd2fa59;
-`;
-
 const StyledTextBoxDiv = styled.div`
   display: flex;
   height: 100%;
   align-items: center;
+  justify-content: space-between;
 `;
 
 const StyledP = styled.p`
   color: ${colors.offPurple};
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 `;
 
 const StyledNew = styled(StyledP)`
@@ -128,10 +125,11 @@ const StyledBest = styled(StyledP)`
 `;
 
 const StyledDot = styled.div`
-  margin: 0.3rem;
-  width: 0.7rem;
-  height: 0.7rem;
-  border-radius: 4rem 4rem 4rem 4rem;
+  margin: 0.2rem;
+  margin-bottom: 2rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
   border: 0.1rem solid ${colors.primary};
   background-color: ${colors.white};
 `;
