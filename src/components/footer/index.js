@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors } from "../../constants/colors";
 import Button from "../button";
 
-const Footer = ({ contact, address, h1 }) => {
+const Footer = ({ contact, address, h1, h2, items }) => {
   return (
     <StyledFooter>
       <StyledContainer1>
@@ -33,6 +33,19 @@ const Footer = ({ contact, address, h1 }) => {
           <StyledLi>Waterproof Headphones</StyledLi>
         </div>
       </StyledContainer2>
+
+      <StyledContainer2>
+        <div>
+          <StyledH2>Categories</StyledH2>
+        </div>
+        <div>
+          <StyledLi>Laptops {"&"} Computers</StyledLi>
+          <StyledLi>Cameras {"&"} Photography</StyledLi>
+          <StyledLi>Smart Phones {"&"} Tablets</StyledLi>
+          <StyledLi>Video Games {"&"} Consoles</StyledLi>
+          <StyledLi>Waterproof Headphones</StyledLi>
+        </div>
+      </StyledContainer2>
     </StyledFooter>
   );
 };
@@ -40,7 +53,7 @@ const Footer = ({ contact, address, h1 }) => {
 export default Footer;
 
 const StyledFooter = styled.div`
-  height: 20rem;
+  height: 25rem;
   width: 100%auto;
   background-color: ${colors.lightash};
   display: flex;
@@ -64,7 +77,8 @@ const StyledText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: ${colors.offPurple};
+  color: ${colors.offBlue};
+  padding-top: 0.5rem;
 `;
 const StyledInput = styled.div`
   display: flex;
@@ -77,13 +91,15 @@ const StyledContainer2 = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: ${colors.offPurple};
+  color: ${colors.offBlue};
   list-style-type: none;
-  /* padding: 2rem 2rem; */
+  padding-top: 4rem;
 `;
 
 const StyledH2 = styled.div`
   color: ${colors.black};
   padding-bottom: 1.5rem;
 `;
-const StyledLi = styled.li``;
+const StyledLi = styled.li`
+  padding-bottom: 1rem;
+`;

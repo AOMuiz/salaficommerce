@@ -48,6 +48,7 @@ function App() {
         address="17 Princess Road, London, Greater London NW1 8JR, UK"
         h1="Hekto"
       />
+
       <GlobalStyle />
     </>
   );
