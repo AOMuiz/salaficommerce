@@ -23,7 +23,7 @@ export default ShopGridCard;
 
 const MainContainer = styled.div`
   width: 23rem;
-  height: 50rem;
+  height: 28rem;
   cursor: pointer;
   margin-left: 50px;
   display: flex;
