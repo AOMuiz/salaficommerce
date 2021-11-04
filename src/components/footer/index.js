@@ -8,9 +8,28 @@ const Footer = ({
   h1,
   h2,
   title = ["Catagories", "Customer Care", "Pages"],
-  data1 = ["Cameras & Photography", "", "", "", ""],
-  data2 = ["Cameras & Photography", "", "", "", ""],
-  data3 = ["Cameras & Photography", "", "", "", ""],
+  data1 = [
+    "Laptops & Computers",
+    "Cameras & Photography",
+    "Smart Phones & Tablets",
+    "Video Games & Consoles",
+    "Waterproof Headphones",
+  ],
+  data2 = [
+    "My Account",
+    "Discount",
+    "Returns",
+    "Orders History",
+    "Order Tracking",
+  ],
+  data3 = [
+    "Blog",
+    "Browse the Shop",
+    "Category",
+    "Pre-Built Pages",
+    "Visual Composer Elements",
+    "WooCommerce Pages",
+  ],
 }) => {
   return (
     <StyledFooter>
