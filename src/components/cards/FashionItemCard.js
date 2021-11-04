@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "../../constants/colors";
 
-const FashionItemCard = ({ img, title, price, subtitle }) => {
+const FashionItemCard = ({ img, title, price1, price2, subtitle }) => {
   return (
     <CardContainer>
       <ImageContainer>
@@ -10,7 +10,10 @@ const FashionItemCard = ({ img, title, price, subtitle }) => {
       </ImageContainer>
       <TextContainer>
         <Title>{title}</Title>
-        <Price>{price}</Price>
+        <PriceContainer>
+          <Price1>{price1}</Price1>
+          <Price2>{price2}</Price2>
+        </PriceContainer>
         <SubTitle>{subtitle}</SubTitle>
       </TextContainer>
     </CardContainer>
@@ -24,12 +27,10 @@ const CardContainer = styled.div`
   width: 80rem;
   height: 20rem;
   display: flex;
-  justify-content: space-between;
   margin-left: 20px;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 1rem 2rem;
   background-color: ${colors.white};
   box-shadow: 1rem 1rem 2rem ${colors.skyBlue};
-  border: 1px solid black;
 `;
 
 const ImageContainer = styled.div``;
@@ -38,7 +39,31 @@ const Image = styled.img`
   width: 25rem;
 `;
 
-const TextContainer = styled.div``;
-const Title = styled.div``;
-const Price = styled.div``;
-const SubTitle = styled.div``;
+const TextContainer = styled.div`
+  padding: 2rem 1rem 1rem 2rem;
+`;
+
+const Title = styled.div`
+  color: ${colors.offBlue};
+  font-size: 2rem;
+  font-weight: bold;
+`;
+
+const PriceContainer = styled.div`
+  display: flex;
+`;
+
+const Price1 = styled.div`
+  color: ${colors.offBlue};
+  font-size: 1.5rem;
+`;
+
+const Price2 = styled.div`
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+`;
+
+const SubTitle = styled.div`
+  color: ${colors.offBlue};
+`;
