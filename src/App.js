@@ -47,6 +47,13 @@ function App() {
         contact="Contact Info"
         address="17 Princess Road, London, Greater London NW1 8JR, UK"
         h1="Hekto"
+        item1="Laptops & Computers"
+        item2="Cameras & Photography"
+        item3="Smart Phones & Tablets"
+        item4="Video Games & Consoles"
+        item5="Waterproof Headphones"
+        item6=""
+        h2="Categories"
       />
 
       <GlobalStyle />

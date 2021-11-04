@@ -2,7 +2,16 @@ import styled from "styled-components";
 import { colors } from "../../constants/colors";
 import Button from "../button";
 
-const Footer = ({ contact, address, h1, h2, items }) => {
+const Footer = ({
+  contact,
+  address,
+  h1,
+  h2,
+  title = ["Catagories", "Customer Care", "Pages"],
+  data1 = ["Cameras & Photography", "", "", "", ""],
+  data2 = ["Cameras & Photography", "", "", "", ""],
+  data3 = ["Cameras & Photography", "", "", "", ""],
+}) => {
   return (
     <StyledFooter>
       <StyledContainer1>
@@ -23,27 +32,28 @@ const Footer = ({ contact, address, h1, h2, items }) => {
 
       <StyledContainer2>
         <div>
-          <StyledH2>Categories</StyledH2>
+          <StyledH2>{}</StyledH2>
         </div>
         <div>
-          <StyledLi>Laptops {"&"} Computers</StyledLi>
-          <StyledLi>Cameras {"&"} Photography</StyledLi>
-          <StyledLi>Smart Phones {"&"} Tablets</StyledLi>
-          <StyledLi>Video Games {"&"} Consoles</StyledLi>
-          <StyledLi>Waterproof Headphones</StyledLi>
+          <StyledLi>{}</StyledLi>
+          <StyledLi>{}</StyledLi>
+          <StyledLi>{}</StyledLi>
+          <StyledLi>{}</StyledLi>
+          <StyledLi>{}</StyledLi>
         </div>
       </StyledContainer2>
 
       <StyledContainer2>
         <div>
-          <StyledH2>Categories</StyledH2>
+          <StyledH2>{}</StyledH2>
         </div>
         <div>
-          <StyledLi>Laptops {"&"} Computers</StyledLi>
-          <StyledLi>Cameras {"&"} Photography</StyledLi>
-          <StyledLi>Smart Phones {"&"} Tablets</StyledLi>
-          <StyledLi>Video Games {"&"} Consoles</StyledLi>
-          <StyledLi>Waterproof Headphones</StyledLi>
+          <StyledLi>{}</StyledLi>
+          <StyledLi>{}</StyledLi>
+          <StyledLi>{}</StyledLi>
+          <StyledLi>{}</StyledLi>
+          <StyledLi>{}</StyledLi>
+          <StyledLi>{}</StyledLi>
         </div>
       </StyledContainer2>
     </StyledFooter>
