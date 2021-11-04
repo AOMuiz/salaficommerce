@@ -8,6 +8,7 @@ import Button from "./components/button";
 import lamp from "./assets/lamp.png";
 import armchair from "./assets/armchair.png";
 import Hero from "./components/hero";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -41,6 +42,11 @@ function App() {
       <Button
         name="This is a long cart and it is even longer"
         color={colors.offPurple}
+      />
+      <Footer
+        contact="Contact Info"
+        address="17 Princess Road, London, Greater London NW1 8JR, UK"
+        h1="Hekto"
       />
       <GlobalStyle />
     </>
