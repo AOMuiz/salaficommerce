@@ -62,7 +62,7 @@ const Footer = ({
         </div>
       </StyledContainer2>
 
-      <StyledContainer2>
+      <StyledContainer3>
         <div>
           <StyledH2>{}</StyledH2>
         </div>
@@ -74,7 +74,7 @@ const Footer = ({
           <StyledLi>{}</StyledLi>
           <StyledLi>{}</StyledLi>
         </div>
-      </StyledContainer2>
+      </StyledContainer3>
     </StyledFooter>
   );
 };
@@ -117,6 +117,22 @@ const StyledInput = styled.div`
 `;
 
 const StyledContainer2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: ${colors.offBlue};
+  list-style-type: none;
+  padding-top: 4rem;
+`;
+const StyledContainer3 = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: ${colors.offBlue};
+  list-style-type: none;
+  padding-top: 4rem;
+`;
+const StyledContainer4 = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
