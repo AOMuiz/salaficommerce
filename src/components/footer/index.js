@@ -6,7 +6,6 @@ const Footer = ({
   contact,
   address,
   h1,
-  h2,
   title = ["Catagories", "Customer Care", "Pages"],
   data1 = [
     "Laptops & Computers",
