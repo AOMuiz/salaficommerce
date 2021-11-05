@@ -2,40 +2,47 @@ import styled from "styled-components";
 import { colors } from "../../constants/colors";
 import Button from "../button";
 
-const Footer = ({
-  contact,
-  address,
-  h1,
-  title = ["Catagories", "Customer Care", "Pages"],
-  data1 = [
-    "Laptops & Computers",
-    "Cameras & Photography",
-    "Smart Phones & Tablets",
-    "Video Games & Consoles",
-    "Waterproof Headphones",
-  ],
-  data2 = [
-    "My Account",
-    "Discount",
-    "Returns",
-    "Orders History",
-    "Order Tracking",
-  ],
-  data3 = [
-    "Blog",
-    "Browse the Shop",
-    "Category",
-    "Pre-Built Pages",
-    "Visual Composer Elements",
-    "WooCommerce Pages",
-  ],
-}) => {
+const datas = [
+  {
+    title: "Categories",
+    data: [
+      "Laptops & Computers",
+      "Cameras & Photography",
+      "Smart Phones & Tablets",
+      "Video Games & Consoles",
+      "Waterproof Headphones",
+    ],
+  },
+  {
+    title: "Customer Care",
+    data: [
+      "My Account",
+      "Discount",
+      "Returns",
+      "Orders History",
+      "Order Tracking",
+    ],
+  },
+  {
+    title: "Pages",
+    data: [
+      "Blog",
+      "Browse the Shop",
+      "Category",
+      "Pre-Built Pages",
+      "Visual Composer Elements",
+      "WooCommerce Pages",
+    ],
+  },
+];
+
+const Footer = ({ contact, address, h1 }) => {
   return (
     <StyledFooter>
       <StyledContainer1>
         <StyledHekto>
           <h1 className="text-black font-bold">
-            {h1} <br />
+            Hekto <br />
           </h1>
           <StyledInput>
             <input type="email" placeholder="Enter Email Address" required />
@@ -47,33 +54,20 @@ const Footer = ({
           <p>{address}</p>
         </StyledText>
       </StyledContainer1>
-
       <StyledContainer2>
-        <div>
-          <StyledH2>{}</StyledH2>
-        </div>
-        <div>
-          <StyledLi>{}</StyledLi>
-          <StyledLi>{}</StyledLi>
-          <StyledLi>{}</StyledLi>
-          <StyledLi>{}</StyledLi>
-          <StyledLi>{}</StyledLi>
-        </div>
+        {datas.map(data => (
+          <div>
+            <StyledH2>{data.title}</StyledH2>
+            <StyledList>
+              {data.data.map(list => (
+                <div>
+                  <StyledLi>{list}</StyledLi>
+                </div>
+              ))}
+            </StyledList>
+          </div>
+        ))}
       </StyledContainer2>
-
-      <StyledContainer3>
-        <div>
-          <StyledH2>{}</StyledH2>
-        </div>
-        <div>
-          <StyledLi>{}</StyledLi>
-          <StyledLi>{}</StyledLi>
-          <StyledLi>{}</StyledLi>
-          <StyledLi>{}</StyledLi>
-          <StyledLi>{}</StyledLi>
-          <StyledLi>{}</StyledLi>
-        </div>
-      </StyledContainer3>
     </StyledFooter>
   );
 };
@@ -81,24 +75,27 @@ const Footer = ({
 export default Footer;
 
 const StyledFooter = styled.div`
-  height: 25rem;
-  width: 100%auto;
+  width: 100%;
   background-color: ${colors.lightash};
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  font-size: 1rem;
 `;
 
 const StyledContainer1 = styled.div`
   display: inline-block;
 `;
+const StyledList = styled.ul``;
 
 const StyledHekto = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
+  font-size: 2.5rem;
+  font-weight: bold;
 `;
 
 const StyledText = styled.div`
@@ -111,39 +108,28 @@ const StyledText = styled.div`
 const StyledInput = styled.div`
   display: flex;
   flex-direction: row;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   padding-bottom: 1.2rem;
 `;
 
 const StyledContainer2 = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   color: ${colors.offBlue};
   list-style-type: none;
-  padding-top: 4rem;
-`;
-const StyledContainer3 = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: ${colors.offBlue};
-  list-style-type: none;
-  padding-top: 4rem;
-`;
-const StyledContainer4 = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: ${colors.offBlue};
-  list-style-type: none;
-  padding-top: 4rem;
+  padding-top: 3rem;
 `;
 
 const StyledH2 = styled.div`
   color: ${colors.black};
   padding-bottom: 1.5rem;
+  padding-left: 5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 `;
+
 const StyledLi = styled.li`
   padding-bottom: 1rem;
+  padding-left: 5rem;
 `;
