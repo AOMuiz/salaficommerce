@@ -1,4 +1,5 @@
 import facebook from "./assets/facebbok.svg";
+
 const Rectangle = () => {
   return (
     <div className="flex flex-row justify-around">
