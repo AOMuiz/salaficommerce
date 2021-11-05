@@ -58,6 +58,7 @@ const Name = styled.p`
 
 const PriceContainer = styled.div`
   display: flex;
+  padding-bottom: 3rem;
 `;
 
 const Price = styled.div`
