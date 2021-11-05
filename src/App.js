@@ -11,6 +11,7 @@ import Button from "./components/button";
 import lamp from "./assets/lamp.png";
 import armchair from "./assets/armchair.png";
 import Hero from "./components/hero";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -39,12 +40,6 @@ function App() {
           />
         </div>
       </div>
-      <Button name="Show more" color={colors.offBlue} />
-      <Button name="Proceed To Checkout" />
-      <Button
-        name="This is a long cart and it is even longer"
-        color={colors.offPurple}
-      />
       <div>
         <FashionItemCard
           img={image}
@@ -64,6 +59,11 @@ function App() {
            in est adipiscing in phasellus non in justo."
         />
       </div>
+ <Footer
+        contact="Contact Info"
+        address="17 Princess Road, London, Greater London NW1 8JR, UK"
+        h1="Hekto"
+      />
 // Do not paste/put  anything/any component after here
 <GlobalStyle />
     </>
