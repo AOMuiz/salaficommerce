@@ -64,7 +64,6 @@ function App() {
         h1="Hekto"
       />
       <Rectangle />
-      // Do not paste/put anything/any component after here
       <GlobalStyle />
     </>
   );
