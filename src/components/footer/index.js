@@ -79,7 +79,7 @@ export default Footer;
 
 const StyledFooter = styled.div`
   width: 100%;
-  background-color: ${colors.lightash};
+  background-color: ${colors.background};
   display: flex;
   flex-direction: row;
   align-items: center;

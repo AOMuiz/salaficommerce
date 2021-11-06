@@ -1,6 +1,5 @@
 import Cards from "./components/cards/Card";
 import GlobalStyle from "./constants/styles/global";
-import { colors } from "./constants/colors";
 import cantileverChair from "./assets/images/cantileverChair.png";
 import comfortHandy from "./assets/images/comfortHandyChair.png";
 import Navbar from "./components/nav";
@@ -11,6 +10,7 @@ import lamp from "./assets/lamp.png";
 import armchair from "./assets/armchair.png";
 import Hero from "./components/hero";
 import Footer from "./components/footer";
+import Rectangle from "./components/rectangle";
 
 function App() {
   return (
@@ -63,7 +63,7 @@ function App() {
         address="17 Princess Road, London, Greater London NW1 8JR, UK"
         h1="Hekto"
       />
-      {/* Do not paste/put anything/any component after here */}
+      <Rectangle />
       <GlobalStyle />
     </>
   );
