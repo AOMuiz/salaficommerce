@@ -7,7 +7,6 @@ import Navbar from "./components/nav";
 import FashionItemCard from "./components/cards/FashionItemCard";
 import image from "./assets/images/rect.png";
 import image2 from "./assets/images/rect-2.png";
-import Button from "./components/button";
 import lamp from "./assets/lamp.png";
 import armchair from "./assets/armchair.png";
 import Hero from "./components/hero";
@@ -59,13 +58,13 @@ function App() {
            in est adipiscing in phasellus non in justo."
         />
       </div>
- <Footer
+      <Footer
         contact="Contact Info"
         address="17 Princess Road, London, Greater London NW1 8JR, UK"
         h1="Hekto"
       />
-// Do not paste/put  anything/any component after here
-<GlobalStyle />
+      {/* Do not paste/put anything/any component after here */}
+      <GlobalStyle />
     </>
   );
 }
