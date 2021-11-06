@@ -3,6 +3,10 @@ import GlobalStyle from "./constants/styles/global";
 import cantileverChair from "./assets/images/cantileverChair.png";
 import comfortHandy from "./assets/images/comfortHandyChair.png";
 import Navbar from "./components/nav";
+import OfferCard from "./components/cards/OfferCard";
+import vector from "./assets/icon/group-1.svg";
+import vector2 from "./assets/icon/group-2.svg";
+import cashback from "./assets/icon/cashback-1.svg";
 import FashionItemCard from "./components/cards/FashionItemCard";
 import image from "./assets/images/rect.png";
 import image2 from "./assets/images/rect-2.png";
@@ -36,6 +40,23 @@ function App() {
             title="Comfort Handy Craft"
             code="Code - Z3456"
             price="$32.0"
+          />
+        </div>
+        <div>
+          <OfferCard
+            url={vector}
+            title="24/7 Support"
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+          />
+          <OfferCard
+            url={vector2}
+            title="24/7 Support"
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+          />
+          <OfferCard
+            url={cashback}
+            title="24/7 Support"
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
           />
         </div>
       </div>
