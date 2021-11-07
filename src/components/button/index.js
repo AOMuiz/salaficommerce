@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "../../constants/colors";
 
-const Button = ({ name, color = colors.skyBlue }) => {
+const Button = ({ name, color = colors.primary }) => {
   const handleClick = () => {
     console.log("button clicked");
   };
