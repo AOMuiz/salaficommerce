@@ -47,7 +47,7 @@ const HomeScreen = () => {
       </div>
       <div className="py-3">
         <h3 className="text-center text-5xl py-3 text-blue-800">
-          What Shopex Offer
+          Trending Products
         </h3>
         <section className="flex justify-around items-center">
           <ShopGridCard
