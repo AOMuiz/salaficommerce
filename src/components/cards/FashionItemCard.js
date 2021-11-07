@@ -4,7 +4,7 @@ import { colors } from "../../constants/colors";
 
 const FashionItemCard = ({ img, title, price1, price2, subtitle }) => {
   return (
-    <CardContainer>
+    <CardContainer className="my-3">
       <ImageContainer>
         <Image src={img} alt="" />
       </ImageContainer>
