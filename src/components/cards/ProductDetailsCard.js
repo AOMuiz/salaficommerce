@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const ProductDetailsCard = ({ url, url1, url2, url3 }) => {
   return (
-    <CardContainer></CardContainer>
+    <CardContainer className="grid grid-cols-1 gap-5"></CardContainer>
 
     // <div className="grid grid-cols-3 gap-5">
     //   <div className="grid grid-rows-3 gap-5">
