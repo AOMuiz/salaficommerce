@@ -8,15 +8,17 @@ export const Hero = ({ lampImgSrc, armChairImgSrc, text, title, subTitle }) => {
     <>
       <StyledContent>
         <StyledTextBoxDiv>
-          <StyledImageBox1>
-            <StyledLamp src={lampImgSrc} alt="" />
-          </StyledImageBox1>
-          <StyledHeaderText>
-            <StyledBest>{text}</StyledBest>
-            <StyledNew>{title}</StyledNew>
-            <StyledP className="mb-4">{subTitle}</StyledP>
-            <Button name="Shop Now" color={colors.primary} />
-          </StyledHeaderText>
+          <StyledLeft>
+            <StyledImageBox1>
+              <StyledLamp src={lampImgSrc} alt="" />
+            </StyledImageBox1>
+            <StyledHeaderText>
+              <StyledBest>{text}</StyledBest>
+              <StyledNew>{title}</StyledNew>
+              <StyledP className="mb-4">{subTitle}</StyledP>
+              <Button name="Shop Now" />
+            </StyledHeaderText>
+          </StyledLeft>
 
           <StyledImageBox2Div1>
             <StyledImageBox2Div2>
@@ -28,7 +30,7 @@ export const Hero = ({ lampImgSrc, armChairImgSrc, text, title, subTitle }) => {
           </StyledImageBox2Div1>
         </StyledTextBoxDiv>
 
-        <div className="flex flex-row justify-around">
+        <div className="flex flex-row justify-around self-center">
           <StyledDot></StyledDot>
           <StyledDot></StyledDot>
           <StyledDot></StyledDot>
@@ -45,12 +47,19 @@ const StyledContent = styled.div`
   background-color: ${colors.lightash};
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: space-evenly;
 `;
 
+const StyledLeft = styled.div`
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+`;
 const StyledLamp = styled.img`
   width: 100%;
+  align-self: flex-start;
 `;
 const StyledHeaderText = styled.div`
   justify-self: center;
@@ -71,6 +80,7 @@ const StyledImageBox2 = styled.div`
   width: 20rem;
   height: 20rem;
   display: flex;
+  position: relative;
 `;
 
 const StyledImageBox2Div1 = styled.div`
@@ -93,6 +103,8 @@ const StyledPercentOff = styled.div`
   align-items: center;
   justify-content: space-around;
   border-radius: 7rem 6rem 6rem 4rem;
+  position: absolute;
+  left: 80%;
   background-color: #00c1fe;
   width: 5rem;
   height: 5rem;
@@ -105,7 +117,7 @@ const StyledTextBoxDiv = styled.div`
   display: flex;
   height: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `;
 
 const StyledP = styled.p`
