@@ -1,6 +1,6 @@
-import facebook from "../../assets/facebook.svg";
-import twitter from "../../assets/twitter.svg";
-import instagram from "../../assets/instagram.svg";
+import facebook from "../../assets/icon/facebook.svg";
+import twitter from "../../assets/icon/twitter.svg";
+import instagram from "../../assets/icon/instagram.svg";
 import { colors } from "../../constants/colors";
 import styled from "styled-components";
 
@@ -8,8 +8,8 @@ const Rectangle = () => {
   return (
     <ContentDiv className="flex flex-row justify-around">
       <>
-        <StyledDiv className="text-lg  m-3">
-          ©Webecy - All Rights Reserved
+        <StyledDiv className="text-lg m-3">
+          ©SalafiDev - All Rights Reserved
         </StyledDiv>
         <div className="flex flex-row justify-around items-center">
           <div className="flex flex-row items-center justify-around w-8 h-8 rounded-full m-3 bg-blue-900">
