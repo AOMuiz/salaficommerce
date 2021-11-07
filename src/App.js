@@ -14,7 +14,7 @@ import bag3 from "./assets/images/bag3.png";
 function App() {
   return (
     <>
-      <HomeScreen />
+      {/* <HomeScreen /> */}
       <GlobalStyle />
       <div>
         <FashionItemCard
@@ -35,9 +35,9 @@ function App() {
            in est adipiscing in phasellus non in justo."
         />
       </div>
-      {/* <div>
+      <div>
         <ProductDetailsCard url={bag} url1={bag1} url1={bag2} url1={bag3} />
-      </div> */}
+      </div>
     </>
   );
 }
