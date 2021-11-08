@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../../constants/colors";
 import Button from "../button";
+import Rectangle from "../../components/rectangle";
 
 const datas = [
   {
@@ -36,9 +37,44 @@ const datas = [
   },
 ];
 
-const Footer = ({ contact, address, h1 }) => {
+const Footer = () => {
   return (
-    <StyledFooter>
+<<<<<<< HEAD
+
+      <StyledFooter>
+        <StyledContainer1>
+          <StyledHekto>
+            <h1 className="text-black font-bold">
+              Hekto <br />
+            </h1>
+            <StyledInput>
+              <input type="email" placeholder="Enter Email Address" required />
+              <div className="inline-block text-2xl">
+                <Button name="Sign Up" color={colors.primary} className="" />
+                <br />
+              </div>
+            </StyledInput>
+          </StyledHekto>
+          <StyledText>
+            <p>Contact Info</p>
+            <address>
+              17 Princess Road, London, Greater London NW1 8JR, UK
+            </address>
+          </StyledText>
+        </StyledContainer1>
+        <StyledContainer2>
+          {datas.map((data) => (
+            <div key={data.title}>
+              <StyledH2>{data.title}</StyledH2>
+              <StyledList>
+                {data.data.map((list, index) => (
+                  <div key={index}>
+                    <StyledLi>{list}</StyledLi>
+                  </div>
+                ))}
+              </StyledList>
+    </StyledFooter>
+=======
       <StyledContainer1>
         <StyledHekto>
           <h1 className="text-black font-bold">
@@ -50,29 +86,13 @@ const Footer = ({ contact, address, h1 }) => {
             <div className="inline-block text-2xl">
               <Button name="Sign Up" color={colors.primary} className="" />{" "}
               <br />
+>>>>>>> de91c56 (changes)
             </div>
-          </StyledInput>
-        </StyledHekto>
-        <StyledText>
-          <p>{contact}</p>
-          <p>{address}</p>
-        </StyledText>
-      </StyledContainer1>
-      <StyledContainer2>
-        {datas.map(data => (
-          <div>
-            <StyledH2>{data.title}</StyledH2>
-            <StyledList>
-              {data.data.map(list => (
-                <div>
-                  <StyledLi>{list}</StyledLi>
-                </div>
-              ))}
-            </StyledList>
-          </div>
-        ))}
-      </StyledContainer2>
-    </StyledFooter>
+          ))}
+        </StyledContainer2>
+      </StyledFooter>
+      <Rectangle />
+    </>
   );
 };
 
