@@ -11,4 +11,7 @@ export const colors = {
   white: "#FFF",
   black: "#000",
   lightBlack: "#0D0E43",
+  lightArsh: "#E5E5E5",
+  lightash: "#F2F0FF",
+  background: "#EEEFFB",
 };
