@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     overflow-y: scroll;
     color: ${colors.primary};
     background-color: ${colors.white};
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
   }
 
   a,
