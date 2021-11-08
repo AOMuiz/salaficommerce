@@ -14,7 +14,7 @@ import bag3 from "./assets/images/bag3.png";
 function App() {
   return (
     <>
-      <HomeScreen />
+      {/* <HomeScreen /> */}
       <GlobalStyle />
       <div>
         <FashionItemCard
