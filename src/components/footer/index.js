@@ -46,6 +46,7 @@ const Footer = ({ contact, address, h1 }) => {
           </h1>
           <StyledInput>
             <input type="email" placeholder="Enter Email Address" required />
+
             <div className="inline-block text-2xl">
               <Button name="Sign Up" color={colors.primary} className="" />{" "}
               <br />
