@@ -39,8 +39,7 @@ const datas = [
 
 const Footer = () => {
   return (
-<<<<<<< HEAD
-
+    <>
       <StyledFooter>
         <StyledContainer1>
           <StyledHekto>
@@ -73,20 +72,6 @@ const Footer = () => {
                   </div>
                 ))}
               </StyledList>
-    </StyledFooter>
-=======
-      <StyledContainer1>
-        <StyledHekto>
-          <h1 className="text-black font-bold">
-            Hekto <br />
-          </h1>
-          <StyledInput>
-            <input type="email" placeholder="Enter Email Address" required />
-
-            <div className="inline-block text-2xl">
-              <Button name="Sign Up" color={colors.primary} className="" />{" "}
-              <br />
->>>>>>> de91c56 (changes)
             </div>
           ))}
         </StyledContainer2>
