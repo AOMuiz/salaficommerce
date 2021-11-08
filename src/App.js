@@ -11,19 +11,10 @@ import ProductHeroSection from "./components/cards/ProductHeroSection";
 function App() {
   return (
     <>
-      {/* <HomeScreen /> */}
-
-      <div>
-        <ProductDetailsCard url={bag} url1={bag1} url1={bag2} url1={bag3} />
-      </div>
-      <div>
-        <ProductHeroSection
-          title="Product Details"
-          info1="Home . "
-          info2="Pages . "
-          info3="Product Details"
-        />
-      </div>
+      <HomeScreen />
+      {/* <div>
+        <ProductDetailsCard url={bag} url1={bag1} url2={bag2} url3={bag3} />
+      </div> */}
       <GlobalStyle />
     </>
   );
