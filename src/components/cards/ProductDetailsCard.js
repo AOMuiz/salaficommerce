@@ -31,7 +31,7 @@ const ProductDetailsCard = ({
       {/* </ImageContainer> */}
       <TextContainer>
         <Title>{title}</Title>
-        <div className="flex">
+        <div className="flex pt-2">
           <p className="text-blue-600">{price1}</p>
           <p className="mx-5">{price2}</p>
         </div>
