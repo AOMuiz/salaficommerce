@@ -22,6 +22,13 @@ function App() {
           title="Playwood arm chair"
           price1="$100"
           price2="$200"
+          color="Color"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           Mauris tellus porttitor purus, et volutpat sit."
+          cart="Add To Cart"
+          categories="Categories"
+          tags="Tags"
+          share="Share"
         />
       </div>
       {/* <div>
