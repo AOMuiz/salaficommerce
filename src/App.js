@@ -11,7 +11,7 @@ import ProductHeroSection from "./components/cards/ProductHeroSection";
 function App() {
   return (
     <>
-      {/* <HomeScreen /> */}
+      <HomeScreen />
 
       <div>
         <ProductDetailsCard
