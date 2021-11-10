@@ -10,9 +10,15 @@ const ProductDetailsCard = ({
   title,
   price1,
   price2,
+  color,
+  text,
+  cart,
+  categories,
+  tags,
+  share,
 }) => {
   return (
-    <CardContainer className="container grid grid-cols-3 mx-auto p-3">
+    <CardContainer className="container grid grid-cols-3 mx-auto p-1">
       {/* <ImageContainer> */}
       <div className="flex flex-col justify-between grid-cols-3 w-3/6 px-5 p-5 space-y-2">
         <div className="w-4/5">
@@ -30,11 +36,17 @@ const ProductDetailsCard = ({
       </div>
       {/* </ImageContainer> */}
       <TextContainer>
-        <Title>{title}</Title>
+        <Title className="font-bold text-3xl">{title}</Title>
         <div className="flex pt-2">
-          <p className="text-blue-600">{price1}</p>
-          <p className="mx-5">{price2}</p>
+          <p className="text-blue-600 text-2xl">{price1}</p>
+          <p className="mx-5 text-2xl">{price2}</p>
         </div>
+        <div className="text-blue-600 font-bold text-2xl">{color}</div>
+        <div className="text-blue-600 font-light text-lg font-sans">{text}</div>
+        <div className="text-blue-600 m-5 text-2xl mx-14">{cart}</div>
+        <div className="text-blue-600 font-bold text-2xl">{categories}</div>
+        <div className="text-blue-600 font-bold text-2xl">{tags}</div>
+        <div className="text-blue-600 font-bold text-2xl">{share}</div>
       </TextContainer>
     </CardContainer>
   );
