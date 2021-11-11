@@ -1,7 +1,4 @@
 import GlobalStyle from "./constants/styles/global";
-import cantileverChair from "./assets/images/cantileverChair.png";
-import comfortHandy from "./assets/images/comfortHandyChair.png";
-import Navbar from "./components/nav";
 import FashionItemCard from "./components/cards/FashionItemCard";
 import image from "./assets/images/rect.png";
 import image2 from "./assets/images/rect-2.png";
@@ -36,7 +33,7 @@ function App() {
         />
       </div>
       <div>
-        <ProductDetailsCard url={bag} url1={bag1} url1={bag2} url1={bag3} />
+        <ProductDetailsCard url={bag} url1={bag1} url2={bag2} url3={bag3} />
       </div>
     </>
   );
