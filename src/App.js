@@ -1,7 +1,9 @@
 import ProductCard from "./components/cards/ProductCard";
 import GlobalStyle from "./constants/styles/global";
 import HomeScreen from "./screens/HomeScreen";
-import img from "./assets/images/img1.png";
+import img1 from "./assets/images/img1.png";
+import img2 from "./assets/images/img2.png";
+import { colors } from "./constants/colors";
 
 function App() {
   return (
@@ -13,9 +15,15 @@ function App() {
       <GlobalStyle />
       <div>
         <ProductCard
-          url={img}
+          url={img1}
           title="23% off in all products"
           subtitle="Shop Now"
+        />
+        <ProductCard
+          primary
+          url={img2}
+          title="23% off in all products"
+          subtitle="View Collection"
         />
       </div>
     </>
