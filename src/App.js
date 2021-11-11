@@ -1,7 +1,7 @@
 import ProductCard from "./components/cards/ProductCard";
 import GlobalStyle from "./constants/styles/global";
 import HomeScreen from "./screens/HomeScreen";
-import img1 from "./assets/images/img1.png";
+import img1 from "./assets/images/image-100.png";
 import img2 from "./assets/images/img2.png";
 import { colors } from "./constants/colors";
 
