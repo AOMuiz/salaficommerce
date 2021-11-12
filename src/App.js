@@ -15,12 +15,12 @@ function App() {
       <GlobalStyle />
       <div>
         <ProductCard
+          backgroundcolor
           url={img1}
           title="23% off in all products"
           subtitle="Shop Now"
         />
         <ProductCard
-          primary
           url={img2}
           title="23% off in all products"
           subtitle="View Collection"

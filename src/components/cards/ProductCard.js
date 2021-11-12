@@ -2,7 +2,12 @@ import React from "react";
 import { colors } from "../../constants/colors";
 import styled from "styled-components";
 
-const ProductCard = ({ url, title, subtitle, color = colors.primary }) => {
+const ProductCard = ({
+  url,
+  title,
+  subtitle,
+  backgroundcolor = colors.primary,
+}) => {
   return (
     <CardContainer className="p-2 ">
       <TextContainer>
@@ -10,7 +15,7 @@ const ProductCard = ({ url, title, subtitle, color = colors.primary }) => {
         <div>{subtitle}</div>
       </TextContainer>
       <ImageContainer>
-        <Image src={url} alt="" />
+        <Image src={url} alt="" className="mx-40" />
       </ImageContainer>
     </CardContainer>
   );
@@ -19,7 +24,7 @@ const ProductCard = ({ url, title, subtitle, color = colors.primary }) => {
 export default ProductCard;
 
 const CardContainer = styled.div`
-  background-color: ${(props) => props.color};
+  background-color: ${(props) => props.backgroundcolor};
   margin: 10px;
   height: 14rem;
   width: 24rem;
@@ -31,7 +36,10 @@ const TextContainer = styled.div`
 `;
 const ImageContainer = styled.div``;
 
-const Image = styled.div``;
+const Image = styled.img`
+  width: 10rem;
+  height: 5rem;
+`;
 const Title = styled.div`
   color: ${colors.offBlue};
 `;
