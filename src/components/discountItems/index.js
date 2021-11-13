@@ -4,7 +4,12 @@ import mark from "../../assets/icon/mark.svg";
 import { colors } from "../../constants/colors";
 import Button from "../button";
 
-const data1 = [];
+const data1 = [
+  {
+    title: "Discount Items",
+    items: ["Wood Chair", "Plastic chair", "Sofa collection"],
+  },
+];
 const data2 = [
   {
     title: "20% Discount Of All Products",
@@ -24,16 +29,22 @@ const DiscountItems = () => {
   return (
     <MainDiv className="flex flex-col items-center justify-around">
       <Heading className="flex flex-col justify-center items-center">
-        <div>
-          <H2 className="font-bold">Discount Items</H2>
-        </div>
-        <div className="flex flex-row justify-between items-center p-4">
-          <ul className="flex flex-row justify-between items-center">
-            <Li className="ml-3 mr-3 text-sm font-bold">Wood Chair</Li>
-            <Li className="ml-3 mr-3 text-sm font-bold">Plastic chair</Li>
-            <Li className="ml-3 mr-3 text-sm font-bold">Sofa collection</Li>
-          </ul>
-        </div>
+        {data1.map(data => (
+          <div key={(data.title, data.items)}>
+            <div className="text-center">
+              <H2 className="font-bold">{data.title}</H2>
+            </div>
+            <div className="flex flex-row justify-between items-center p-4">
+              <ul className="flex flex-row justify-between items-center">
+                {data.items.map((list, index) => (
+                  <div key={index}>
+                    <Li className="ml-3 mr-3 text-sm font-bold">{list}</Li>
+                  </div>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
       </Heading>
 
       <Items className="flex flex-row-reverse justify-around items-center">
@@ -46,7 +57,7 @@ const DiscountItems = () => {
           </div>
         </RightDiv>
 
-        <LeftDiv className="flex flex-col justify-between items-start">
+        <LeftDiv className="flex flex-col justify-around items-start">
           {data2.map(data => (
             <div
               key={
@@ -76,7 +87,7 @@ const DiscountItems = () => {
                   ))}
                 </Ul>
 
-                <Ul className="flex flex-col items-start justify-between">
+                <Ul className="flex flex-col items-start justify-between pl-5">
                   {data.items2.map((list, index) => (
                     <div key={index}>
                       <div>
@@ -120,7 +131,8 @@ const H2 = styled.h2`
 `;
 
 const Ul = styled.ul`
-  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 `;
 
 const Li = styled.li`
