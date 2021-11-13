@@ -1,7 +1,24 @@
 import styled from "styled-components";
 import tortuga from "../../assets/images/tortuga.png";
+import mark from "../../assets/icon/mark.svg";
 import { colors } from "../../constants/colors";
 import Button from "../button";
+
+const data1 = [];
+const data2 = [
+  {
+    title: "20% Discount Of All Products",
+    heading: "Eams Sofa Compact",
+
+    text: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque
+          quam rerum doloribus illo, reiciendis repudiandae!`,
+    items1: ["Material expose like metals", "Simple neutral colours."],
+    items2: [
+      "Clear lines and geomatric figures",
+      "Material expose like metals",
+    ],
+  },
+];
 
 const DiscountItems = () => {
   return (
@@ -20,32 +37,65 @@ const DiscountItems = () => {
       </Heading>
 
       <Items className="flex flex-row-reverse justify-around items-center">
-        <RightDiv className=" mt-12 flex flex-row justify-center items-center">
-          <Img src={tortuga} alt="" />
+        <RightDiv className="flex flex-row justify-center items-center">
+          <div className="flex flex-col justify-around items-center">
+            <ImageDiv></ImageDiv>
+            <div className="flex flex-col justify-around items-center">
+              <Img src={tortuga} alt="" />
+            </div>
+          </div>
         </RightDiv>
 
         <LeftDiv className="flex flex-col justify-between items-start">
-          <H2 className="font-bold mb-3">20% Discount Of All Products</H2>
-          <p className="text-sm mb-4 font-bold">Eams Sofa Compact</p>
+          {data2.map(data => (
+            <div
+              key={
+                (data.title, data.heading, data.text, data.items1, data.items2)
+              }
+            >
+              <H2 className="font-bold mb-3">{data.title}</H2>
+              <p className="text-sm mb-4 font-bold">{data.heading}</p>
 
-          <P className="text-sm mb-2">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque{" "}
-            <br />
-            quam rerum doloribus illo, reiciendis repudiandae!
-          </P>
-          <div className="flex flex-col items-center justify-between">
-            <div className="flex flex-row items-start justify-between mb-3">
-              <Ul className="flex flex-col items-start justify-between">
-                <Li className=" text-sm">Material expose like metals</Li>
-                <Li className=" text-sm">Simple neutral colours.</Li>
-              </Ul>
+              <P className="text-sm mb-2">{data.text}</P>
 
-              <Ul className="flex flex-col items-start justify-between">
-                <Li className=" text-sm">Clear lines and geomatric figures</Li>
-                <Li className=" text-sm">Material expose like metals</Li>
-              </Ul>
+              <div className="flex flex-row justify-start items-start">
+                <Ul className="flex flex-col items-start justify-between">
+                  {data.items1.map((list, index) => (
+                    <div key={index}>
+                      <div>
+                        <Li className="text-sm">
+                          <div className="flex flex-row items-center justify-around">
+                            <div>
+                              <Mark src={mark} alt="" />
+                            </div>
+                            <div>{list}</div>
+                          </div>
+                        </Li>
+                      </div>
+                    </div>
+                  ))}
+                </Ul>
+
+                <Ul className="flex flex-col items-start justify-between">
+                  {data.items2.map((list, index) => (
+                    <div key={index}>
+                      <div>
+                        <Li className="text-sm">
+                          <div className="flex flex-row items-center justify-around">
+                            <div>
+                              <Mark src={mark} alt="" />
+                            </div>
+                            <div>{list}</div>
+                          </div>
+                        </Li>
+                      </div>
+                    </div>
+                  ))}
+                </Ul>
+              </div>
             </div>
-          </div>
+          ))}
+
           <Button name="Shop Now"></Button>
         </LeftDiv>
       </Items>
@@ -69,11 +119,17 @@ const H2 = styled.h2`
   color: ${colors.offBlue};
 `;
 
-const Ul = styled.ul``;
+const Ul = styled.ul`
+  padding: 1rem;
+`;
 
 const Li = styled.li`
   padding: 0.5rem;
   color: ${colors.offBlue};
+`;
+
+const Mark = styled.img`
+  width: 50%;
 `;
 
 const Items = styled.div``;
@@ -84,14 +140,24 @@ const RightDiv = styled.div`
 `;
 const LeftDiv = styled.div``;
 
-const Img = styled.img`
-  background-size: initial;
-  /* background-repeat: no-repeat; */
+const ImageDiv = styled.div`
+  background-position: center;
   background-image: radial-gradient(
     circle,
     #fcecf1,
     #fcecf1 66%,
     transparent 66%
   );
-  width: 55%;
+  width: 21rem;
+  height: 21rem;
+  display: flex;
+  align-self: center;
+  position: relative;
+  top: 15rem;
+`;
+
+const Img = styled.img`
+  width: 77%;
+  position: relative;
+  bottom: 9rem;
 `;
