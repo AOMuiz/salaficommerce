@@ -15,7 +15,8 @@ function App() {
       <GlobalStyle />
       <div>
         <ProductCard
-          backgroundcolor
+          large
+          color={colors.lightBlack}
           url={img1}
           title="23% off in all products"
           subtitle="Shop Now"
