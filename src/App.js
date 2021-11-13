@@ -22,6 +22,7 @@ function App() {
           subtitle="Shop Now"
         />
         <ProductCard
+          large
           url={img2}
           title="23% off in all products"
           subtitle="View Collection"
