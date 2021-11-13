@@ -12,10 +12,9 @@ function App() {
       {/* <div>
         <ProductDetailsCard url={bag} url1={bag1} url2={bag2} url3={bag3} />
       </div> */}
-      <GlobalStyle />
       <div>
         <ProductCard
-          color={colors.lightBlack}
+          color={colors.lightPink}
           url={img1}
           title="23% off in all products"
           subtitle="Shop Now"
@@ -23,10 +22,12 @@ function App() {
         <ProductCard
           large
           url={img2}
+          color={colors.skyBlue}
           title="23% off in all products"
           subtitle="View Collection"
         />
       </div>
+      <GlobalStyle />
     </>
   );
 }
