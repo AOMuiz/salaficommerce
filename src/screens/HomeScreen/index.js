@@ -2,7 +2,7 @@ import Layout from "../../components/layout";
 import Cards from "../../components/cards/Card";
 import ShopGridCard from "../../components/cards/ShopGridCard";
 import OfferCard from "../../components/cards/OfferCard";
-import DiscountItems from "./components/discountItems";
+import DiscountItems from "../../components/discountItems";
 
 import vector from "../../assets/icon/group-1.svg";
 import vector2 from "../../assets/icon/group-2.svg";
