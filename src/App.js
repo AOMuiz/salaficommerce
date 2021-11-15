@@ -1,4 +1,5 @@
 import ProductCard from "./components/cards/ProductCard";
+import DiscountItems from "./components/discountItems";
 import GlobalStyle from "./constants/styles/global";
 import HomeScreen from "./screens/HomeScreen";
 import img1 from "./assets/images/image-100.png";
@@ -27,6 +28,7 @@ function App() {
           subtitle="View Collection"
         />
       </div>
+      <DiscountItems />
       <GlobalStyle />
     </>
   );

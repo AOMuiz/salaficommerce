@@ -62,7 +62,7 @@ const Footer = () => {
           </StyledText>
         </StyledContainer1>
         <StyledContainer2>
-          {datas.map((data) => (
+          {datas.map(data => (
             <div key={data.title}>
               <StyledH2>{data.title}</StyledH2>
               <StyledList>
@@ -124,7 +124,7 @@ const StyledInput = styled.div`
 const StyledContainer2 = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   color: ${colors.offBlue};
   list-style-type: none;
   padding-top: 3rem;
