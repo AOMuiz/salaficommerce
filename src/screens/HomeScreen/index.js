@@ -46,6 +46,28 @@ const HomeScreen = () => {
           />
         </div>
       </div>
+      <div className="py-3">
+        <h3 className="text-center text-4xl py-3 text-blue-900">
+          What Shopex Offer
+        </h3>
+        <section className="flex justify-around items-center">
+          <OfferCard
+            url={cashback}
+            title="24/7 Support"
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+          />
+          <OfferCard
+            url={vector}
+            title="24/7 Support"
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+          />
+          <OfferCard
+            url={vector2}
+            title="24/7 Support"
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+          />
+        </section>
+      </div>
       <DiscountItems />
       <div className="py-3">
         <h3 className="text-center text-4xl py-3 text-blue-900">
@@ -79,28 +101,6 @@ const HomeScreen = () => {
         </section>
       </div>
       <DiscountItems />
-      <div className="py-3">
-        <h3 className="text-center text-4xl py-3 text-blue-900">
-          What Shopex Offer
-        </h3>
-        <section className="flex justify-around items-center">
-          <OfferCard
-            url={cashback}
-            title="24/7 Support"
-            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
-          />
-          <OfferCard
-            url={vector}
-            title="24/7 Support"
-            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
-          />
-          <OfferCard
-            url={vector2}
-            title="24/7 Support"
-            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
-          />
-        </section>
-      </div>
     </Layout>
   );
 };
