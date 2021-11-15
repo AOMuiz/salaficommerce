@@ -13,7 +13,7 @@ function App() {
       </div> */}
       <GlobalStyle />
       <div>
-        <TopCategoriesCard url={img} name="show" />
+        <TopCategoriesCard url={img} buttonName="show" />
       </div>
     </>
   );
