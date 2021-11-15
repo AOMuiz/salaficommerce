@@ -27,7 +27,7 @@ const data2 = [
 
 const DiscountItems = () => {
   return (
-    <MainDiv className="flex flex-col items-center justify-around py-3">
+    <MainDiv className="flex flex-col items-center justify-around py-3 mb-5">
       <Heading className="flex flex-col justify-center items-center">
         {data1.map((data) => (
           <div key={(data.title, data.items)}>
