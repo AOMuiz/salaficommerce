@@ -15,9 +15,13 @@ function App() {
         <ProductDetailsCard url={bag} url1={bag1} url2={bag2} url3={bag3} />
       </div> */}
       <GlobalStyle />
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-3">
         <TopCategoriesCard url={img} buttonName="View Shop" />
-        <TopCategoriesCard url={img2} buttonName="View Shop" />
+        <TopCategoriesCard
+          url={img2}
+          buttonName="View Shop"
+          color={colors.offPurple}
+        />
         <TopCategoriesCard url={img3} buttonName="View Shop" />
         <TopCategoriesCard url={img4} buttonName="View Shop" />
       </div>
