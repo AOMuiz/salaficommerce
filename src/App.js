@@ -17,11 +17,7 @@ function App() {
       <GlobalStyle />
       <div className="grid grid-cols-3">
         <TopCategoriesCard url={img} buttonName="View Shop" />
-        <TopCategoriesCard
-          url={img2}
-          buttonName="View Shop"
-          color={colors.offPurple}
-        />
+        <TopCategoriesCard url={img2} buttonName="View Shop" />
         <TopCategoriesCard url={img3} buttonName="View Shop" />
         <TopCategoriesCard url={img4} buttonName="View Shop" />
       </div>
