@@ -39,20 +39,18 @@ Start Development Mode :
 ## Technologies Used
 
 1. Used `React Js` for building the website.
-
 2. Implemented website styling using `Styled Components` and `Tailwind css`.
-
 3. Used `Error Boundary` npm package for handling errors.
-
-4. Used `Fetch api` for data fecthing.
-
-5. Created `Custom Hooks` for handling fetched data and rendering.
+4. Used `React Query` For Asynchronous Request and Management.
+5. Used `Redux` for State Management.
+6. Used `Fetch api` for data fecthing.
+7. Created `Custom Hooks` for handling fetched data and rendering.
 
 ## Style Utilities
 
 ### Relative Unit
 
-This project using relative unit based 10px. so you can use `1rem` which means `10px` propeties in css to help ours styling more easier handling Resposive.
+This project is using relative unit based 10px. so you can use `1rem` which means `10px` propeties in css to help ours styling more easier handling Resposive.
 
 ### Media Queries
 
