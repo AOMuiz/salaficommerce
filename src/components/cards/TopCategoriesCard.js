@@ -8,7 +8,7 @@ const TopCategoriesCard = ({ url, name, height }) => {
     <CardContiner>
       <div>
         <Image src={url} alt="" />
-        <Button name={name} height={height} />
+        <Button name={name} />
       </div>
     </CardContiner>
   );

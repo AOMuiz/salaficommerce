@@ -3,10 +3,6 @@ import styled from "styled-components";
 import { colors } from "../../constants/colors";
 
 const Button = ({ name, color = colors.primary }) => {
-  const handleClick = () => {
-    console.log("button clicked");
-  };
-
   return (
     <StyledButton onClick={handleClick} color={color}>
       {name}
