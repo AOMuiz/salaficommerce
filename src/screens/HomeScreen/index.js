@@ -2,6 +2,7 @@ import Layout from "../../components/layout";
 import Cards from "../../components/cards/Card";
 import ShopGridCard from "../../components/cards/ShopGridCard";
 import OfferCard from "../../components/cards/OfferCard";
+import DiscountItems from "./components/discountItems";
 
 import vector from "../../assets/icon/group-1.svg";
 import vector2 from "../../assets/icon/group-2.svg";
@@ -45,6 +46,7 @@ const HomeScreen = () => {
           />
         </div>
       </div>
+      <DiscountItems />
       <div className="py-3">
         <h3 className="text-center text-5xl py-3 text-blue-800">
           Trending Products
@@ -76,6 +78,7 @@ const HomeScreen = () => {
           />
         </section>
       </div>
+      <DiscountItems />
       <div className="py-3">
         <h3 className="text-center text-5xl py-3 text-blue-800">
           What Shopex Offer
