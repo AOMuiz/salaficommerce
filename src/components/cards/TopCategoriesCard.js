@@ -2,13 +2,22 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "../../constants/colors";
 
-const TopCategoriesCard = ({ url, name, buttonName }) => {
+const TopCategoriesCard = ({
+  url,
+  name,
+  buttonName,
+  color = colors.primary,
+}) => {
   return (
-    <CardContainer className="parent">
+    <CardContainer>
       <ImageContainer>
         <Image src={url} alt="" />
       </ImageContainer>
-      <Button className="button">{buttonName}</Button>
+      <div>
+        <Button className="button" color={color}>
+          {buttonName}
+        </Button>
+      </div>
     </CardContainer>
   );
 };
@@ -18,7 +27,8 @@ export default TopCategoriesCard;
 const CardContainer = styled.div`
   width: 18rem;
   height: 18rem;
-  background-color: #f6f7fb;
+  /* background-color: #f6f7fb; */
+  background-color: ${(props) => props.color};
   margin: 20px;
   border-radius: 90px;
   display: flex;
