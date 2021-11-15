@@ -2,21 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "../../constants/colors";
 
-const TopCategoriesCard = ({
-  url,
-  name,
-  buttonName,
-  color = colors.primary,
-}) => {
+const TopCategoriesCard = ({ url, name, buttonName }) => {
   return (
     <CardContainer>
       <ImageContainer>
         <Image src={url} alt="" />
       </ImageContainer>
       <div>
-        <Button className="button" color={color}>
-          {buttonName}
-        </Button>
+        <Button className="button">{buttonName}</Button>
       </div>
     </CardContainer>
   );
