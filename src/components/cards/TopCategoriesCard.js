@@ -1,15 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { colors } from "../../constants/colors";
-import Button from "../button";
 
-const TopCategoriesCard = ({ url, name, height }) => {
+const TopCategoriesCard = ({ url, name, buttonName }) => {
   return (
     <CardContiner>
-      <div>
+      <ButtonContainer>
         <Image src={url} alt="" />
-        <Button name={name} />
-      </div>
+      </ButtonContainer>
+      <Button>{buttonName}</Button>
     </CardContiner>
   );
 };
@@ -25,6 +24,7 @@ const CardContiner = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   cursor: pointer;
   box-shadow: 0.3rem 0.3rem 2rem ${colors.lightArsh};
   &:hover {
@@ -33,9 +33,14 @@ const CardContiner = styled.div`
   }
 `;
 
-const StyledButton = styled(Button)`
-  height: 10px;
-  width: 10px;
+const ButtonContainer = styled.div``;
+
+const Button = styled.div`
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  background-color: rgba(10, 200, 100, 1);
+  /* height: 3rem;
+  width: 4rem; */
 `;
 
 const Image = styled.img`

@@ -3,11 +3,7 @@ import styled from "styled-components";
 import { colors } from "../../constants/colors";
 
 const Button = ({ name, color = colors.primary }) => {
-  return (
-    <StyledButton onClick={handleClick} color={color}>
-      {name}
-    </StyledButton>
-  );
+  return <StyledButton color={color}>{name}</StyledButton>;
 };
 
 const StyledButton = styled.div`
