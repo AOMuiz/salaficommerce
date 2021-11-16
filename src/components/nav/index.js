@@ -9,6 +9,7 @@ import { ReactComponent as Cart } from "../../assets/icon/cart-24-regular.svg";
 import { ReactComponent as PhoneCall } from "../../assets/icon/phone-call.svg";
 import { ReactComponent as Search } from "../../assets/icon/uil_search.svg";
 import { ReactComponent as Heart } from "../../assets/icon/uil_heart-alt.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -36,13 +37,17 @@ const Navbar = () => {
           <StyledListItem>
             Wishlist <Heart />
           </StyledListItem>
-          <StyledListItem>
-            Cart <Cart />
-          </StyledListItem>
+          <Link to="/cart">
+            <StyledListItem>
+              Cart <Cart />
+            </StyledListItem>
+          </Link>
         </StyledList>
       </StyledHeadingBar>
       <StyledNavBar>
-        <StyledLogo>Hekto</StyledLogo>
+        <StyledLogo>
+          <Link to="/">Hekto</Link>
+        </StyledLogo>
         <StyledNavForm>
           <StyledInput />
           <StyledSearch>
@@ -50,11 +55,17 @@ const Navbar = () => {
           </StyledSearch>
         </StyledNavForm>
         <StyledList>
-          <StyledNavbarListItem>
-            Home <Chevron />
-          </StyledNavbarListItem>
-          <StyledNavbarListItem>Pages</StyledNavbarListItem>
-          <StyledNavbarListItem>Products</StyledNavbarListItem>
+          <Link to="/">
+            <StyledNavbarListItem>
+              Home <Chevron />
+            </StyledNavbarListItem>
+          </Link>
+          <Link to="/product">
+            <StyledNavbarListItem>Pages</StyledNavbarListItem>
+          </Link>
+          <Link to="/products">
+            <StyledNavbarListItem>Products</StyledNavbarListItem>
+          </Link>
           <StyledNavbarListItem>Shop</StyledNavbarListItem>
           <StyledNavbarListItem>Contact</StyledNavbarListItem>
         </StyledList>
