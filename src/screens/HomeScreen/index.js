@@ -11,6 +11,7 @@ import bag from "../../assets/images/bag.png";
 import earpiece from "../../assets/images/earpiece1.png";
 import cantileverChair from "../../assets/images/cantileverChair.png";
 import comfortHandy from "../../assets/images/comfortHandyChair.png";
+import UniqueFeatures from "../../components/uniquefeatures";
 
 const HomeScreen = () => {
   return (
@@ -68,7 +69,7 @@ const HomeScreen = () => {
           />
         </section>
       </div>
-      <DiscountItems />
+      <UniqueFeatures />
       <div className="py-3">
         <h3 className="text-center text-4xl py-3 text-blue-900">
           Trending Products
