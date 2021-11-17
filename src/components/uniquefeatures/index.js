@@ -17,7 +17,7 @@ const UniqueFeatures = () => {
       <div className="flex flex-col justify-left items-left">
         <div className="pl-10">
           <H2 className="font-bold">
-            Unique Features Of leatest & Trending Poducts
+            Unique Features Of leatest & <br /> Trending Poducts
           </H2>
         </div>
         <div>
@@ -102,7 +102,6 @@ const Color1 = styled.div`
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  /* padding-left: 1rem; */
   margin-right: 0.5rem;
 `;
 const Color2 = styled.div`
@@ -110,7 +109,6 @@ const Color2 = styled.div`
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  /* padding-left: 1rem; */
   margin-right: 0.5rem;
 `;
 const Color3 = styled.div`
@@ -118,6 +116,5 @@ const Color3 = styled.div`
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  /* padding-left: 1rem; */
   margin-right: 0.5rem;
 `;
