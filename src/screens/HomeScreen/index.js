@@ -51,7 +51,7 @@ const HomeScreen = () => {
           />
         </div>
       </div>
-      <div className="py-3">
+      <div className="my-5">
         <h3 className="text-center text-4xl py-3 text-blue-900">
           What Shopex Offer
         </h3>
@@ -63,6 +63,11 @@ const HomeScreen = () => {
           />
           <OfferCard
             url={vector}
+            title="24/7 Support"
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
+          />
+          <OfferCard
+            url={vector2}
             title="24/7 Support"
             subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida."
           />
