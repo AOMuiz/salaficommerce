@@ -1,3 +1,4 @@
+import TopCategoriesCard from "./components/cards/TopCategoriesCard";
 import GlobalStyle from "./constants/styles/global";
 import HomeScreen from "./screens/HomeScreen";
 import ProductListScreen from "./screens/ProductListScreen";
@@ -9,7 +10,7 @@ import { Route, Switch } from "react-router-dom";
 function App() {
   return (
     <>
-      {/* <div>
+     {/* <div>
         <ProductDetailsCard url={bag} url1={bag1} url2={bag2} url3={bag3} />
       </div> */}
       <Switch>
