@@ -6,8 +6,8 @@ import { colors } from "../../constants/colors";
 
 const UniqueFeatures = () => {
   return (
-    <div className="flex flex-row justify-center items-center">
-      <div className="flex flex-col justify-right items-right">
+    <Container className="flex flex-row justify-center items-center p-0">
+      <div className="flex flex-col justify-right items-right p-0">
         <ImageDiv></ImageDiv>
         <div>
           <Img src={Sofachair} alt="" />
@@ -49,11 +49,15 @@ const UniqueFeatures = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 
 export default UniqueFeatures;
+
+const Container = styled.div`
+  background-color: #f1f0ff;
+`;
 
 const ImageDiv = styled.div`
   background-position: center;
