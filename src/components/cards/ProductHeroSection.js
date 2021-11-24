@@ -1,4 +1,3 @@
-import react from "react";
 import { colors } from "../../constants/colors";
 import styled from "styled-components";
 
@@ -23,13 +22,12 @@ export default ProductHeroSection;
 
 const HeroContainer = styled.div`
   background-color: #f6f5ff;
-  width: 100rem;
   height: 20rem;
-  margin: 5rem 5rem;
+  margin-bottom: 25px;
 `;
 
 const TextContainer = styled.div`
-  padding: 5rem 15rem 5rem 25rem;
+  padding: 5rem 15rem 5rem 15rem;
   display: flex;
   flex-direction: column;
 `;

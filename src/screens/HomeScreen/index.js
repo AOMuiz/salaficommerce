@@ -17,10 +17,20 @@ import img from "../../assets/images/image-20.png";
 import img1 from "../../assets/images/image-30.png";
 import img2 from "../../assets/images/image-40.png";
 import img3 from "../../assets/images/image-50.png";
+import lamp from "../../assets/images/lamp.png";
+import armchair from "../../assets/images/armchair.png";
+import Hero from "../../components/hero";
 
 const HomeScreen = () => {
   return (
-    <Layout>
+    <>
+      <Hero
+        lampImgSrc={lamp}
+        armChairImgSrc={armchair}
+        text="Best Furniture For Your Castle..."
+        title="New Furniture Collection Trends in 2020."
+        subTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labor illum veritatis, repudiandae eligendi."
+      />
       <div className="my-5">
         <h3 className="text-center text-4xl py-3 text-blue-900">
           Featured Products
@@ -123,7 +133,7 @@ const HomeScreen = () => {
           <TopCategoriesCard url={img3} buttonName="View Shop" />
         </section>
       </div>
-    </Layout>
+    </>
   );
 };
 
