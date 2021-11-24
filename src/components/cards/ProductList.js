@@ -2,25 +2,27 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "../../constants/colors";
 
-const FashionItemCard = ({ img, title, price1, price2, subtitle }) => {
+const ShopCard = ({ title, price, image, description }) => {
   return (
     <CardContainer className="my-3">
       <ImageContainer>
-        <Image src={img} alt="" />
+        <Image src={image} alt="" />
       </ImageContainer>
       <TextContainer>
         <Title>{title}</Title>
         <PriceContainer>
-          <Price1>{price1}</Price1>
-          <Price2>{price2}</Price2>
+          <Price1>{price}</Price1>
+          <Price2>
+            <del>$30</del>
+          </Price2>
         </PriceContainer>
-        <SubTitle>{subtitle}</SubTitle>
+        <SubTitle>{description}</SubTitle>
       </TextContainer>
     </CardContainer>
   );
 };
 
-export default FashionItemCard;
+export default ShopCard;
 
 const CardContainer = styled.div`
   background-color: ${colors.pantonPurple};

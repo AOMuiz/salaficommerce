@@ -15,9 +15,10 @@ function App() {
       <Switch>
         <Route path="/" component={HomeScreen} exact />
         <Route path="/products" component={ProductListScreen} />
-        <Route path="/productDetail" component={ProductDetailsScreen} />
+        <Route path="/product/:productId" component={ProductDetailsScreen} />
         <Route path="/cart" component={Cart} />
         <Route component={Error} />
+        <Route>404 NOT FOUND</Route>
       </Switch>
       <GlobalStyle />
     </>
