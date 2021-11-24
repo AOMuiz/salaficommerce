@@ -17,7 +17,7 @@ const UniqueFeatures = () => {
       <div className="flex flex-col justify-left items-left">
         <div className="pl-10">
           <H2 className="font-bold">
-            Unique Features Of leatest & <br /> Trending Poducts
+            Unique Features Of leatest &amp; <br /> Trending Poducts
           </H2>
         </div>
         <div>
@@ -44,7 +44,7 @@ const UniqueFeatures = () => {
           </div>
           <div className="pl-4">
             <P>
-              B&B Italian Sofa <br /> $32.00
+              B&amp;B Italian Sofa <br /> $32.00
             </P>
           </div>
         </div>
