@@ -57,6 +57,7 @@ export default UniqueFeatures;
 
 const Container = styled.div`
   background-color: #f1f0ff;
+  height: 42rem;
 `;
 
 const ImageDiv = styled.div`
