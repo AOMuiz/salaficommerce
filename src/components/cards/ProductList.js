@@ -13,7 +13,7 @@ const ShopCard = ({ title, price, image, description }) => {
         <PriceContainer>
           <Price1>{price}</Price1>
           <Price2>
-            <del>$30</del>
+            <del>10% off</del>
           </Price2>
         </PriceContainer>
         <SubTitle>{description}</SubTitle>

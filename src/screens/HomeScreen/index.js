@@ -1,4 +1,3 @@
-import Layout from "../../components/layout";
 import Cards from "../../components/cards/Card";
 import ShopGridCard from "../../components/cards/ShopGridCard";
 import OfferCard from "../../components/cards/OfferCard";
