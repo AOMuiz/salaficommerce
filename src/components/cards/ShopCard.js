@@ -2,21 +2,22 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "../../constants/colors";
 
-const ShopCard = ({ title, price, image, description }) => {
+const ShopCard = ({ title, price, image, description, category }) => {
   return (
-    <CardContainer className="my-3">
+    <CardContainer className="my-5">
       <ImageContainer>
         <Image src={image} alt="" />
       </ImageContainer>
       <TextContainer>
         <Title>{title}</Title>
-        <PriceContainer>
-          <Price1>{price}</Price1>
+        <PriceContainer className="py-2">
+          <Price1>${price}</Price1>
           <Price2>
             <del>10% off</del>
           </Price2>
         </PriceContainer>
-        <SubTitle>{description}</SubTitle>
+        <p>Category: {category}</p>
+        <SubTitle className="py-2">{description}</SubTitle>
       </TextContainer>
     </CardContainer>
   );
@@ -27,7 +28,7 @@ export default ShopCard;
 const CardContainer = styled.div`
   background-color: ${colors.pantonPurple};
   width: 80rem;
-  height: 20rem;
+  height: 25rem;
   display: flex;
   margin-left: 20px;
   padding: 2rem 1rem 1rem 2rem;
@@ -37,8 +38,8 @@ const CardContainer = styled.div`
 
 const ImageContainer = styled.div``;
 const Image = styled.img`
-  height: 16rem;
-  width: 25rem;
+  height: 100%;
+  width: 30rem;
 `;
 
 const TextContainer = styled.div`
@@ -68,4 +69,8 @@ const Price2 = styled.div`
 
 const SubTitle = styled.div`
   color: ${colors.offBlue};
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-align: justify;
 `;
