@@ -2,10 +2,11 @@ import { ActionTypes } from "../constants/action-types";
 import initialState from "../constants/state";
 
 export const cartReducer = (state = initialState, action) => {
+  let addedItem;
   switch (action.type) {
     //INSIDE HOME/PRODUCT LIST COMPONENT
     case ActionTypes.ADD_TO_CART:
-      let addedItem = state.products.find((item) => item.id === action.id);
+      addedItem = state.products.find((item) => item.id === action.id);
       //check if the action id exists in the addedItems
       let existed_item = state.addedItems.find((item) => action.id === item.id);
       if (existed_item) {
@@ -70,24 +71,5 @@ export const cartReducer = (state = initialState, action) => {
       return state;
   }
 };
-
-// const cartReducer = (state = initialState, action) => {
-
-//   if (action.type === ADD_SHIPPING) {
-//     return {
-//       ...state,
-//       total: state.total + 6,
-//     };
-//   }
-
-//   if (action.type === "SUB_SHIPPING") {
-//     return {
-//       ...state,
-//       total: state.total - 6,
-//     };
-//   } else {
-//     return state;
-//   }
-// };
 
 export default cartReducer;
