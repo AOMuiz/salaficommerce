@@ -19,6 +19,7 @@ import img3 from "../../assets/images/image-50.png";
 import lamp from "../../assets/images/lamp.png";
 import armchair from "../../assets/images/armchair.png";
 import Hero from "../../components/hero";
+import CartTotalsCard from "../../components/cards/CardToolsCard";
 
 const HomeScreen = () => {
   return (
@@ -59,6 +60,9 @@ const HomeScreen = () => {
             code="Code - Z3456"
             price="$32.0"
           />
+        </div>
+        <div>
+          <CartTotalsCard />
         </div>
       </div>
       <div className="my-5">
