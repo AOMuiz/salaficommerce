@@ -6,7 +6,6 @@ import Cart from "./screens/CartScreen";
 import Error from "./screens/ErrorScreen";
 import { Route, Switch } from "react-router-dom";
 import Layout from "./components/layout";
-import CartTotalsCard from "./components/cards/CardToolsCard";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
           <Route path="/cart" component={Cart} />
           <Route component={Error} />
           <Route>404 NOT FOUND</Route>
-          <Route path="/cartcard" component={CartTotalsCard} />
         </Switch>
       </Layout>
       <GlobalStyle />
