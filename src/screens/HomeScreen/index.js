@@ -19,6 +19,7 @@ import img3 from "../../assets/images/image-50.png";
 import lamp from "../../assets/images/lamp.png";
 import armchair from "../../assets/images/armchair.png";
 import Hero from "../../components/hero";
+import CalculateShipping from "../../components/cards/CaculateShipping";
 
 const HomeScreen = () => {
   return (
@@ -119,6 +120,14 @@ const HomeScreen = () => {
             price2="$24,000"
           />
         </section>
+        <div>
+          <CalculateShipping
+            buttontext="Calculate Shipping"
+            name="Nigeria"
+            state="Ilorin Kwara - 1200"
+            code="Postal Code"
+          />
+        </div>
       </div>
       <DiscountItems />
       <div className="my-5">
