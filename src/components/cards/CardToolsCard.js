@@ -11,12 +11,12 @@ const CartTotalsCard = ({
   buttontext,
 }) => {
   return (
-    <Container className="grid-cols-4 flex just px-10 py-3">
-      <div className="flex justify-between border-b-2">
+    <Container className="grid-cols-4 flex px-12 py-3">
+      <div className="flex justify-between border-b-2 py-3">
         <SubTotal className=" font-bold">{subtotal}</SubTotal>
         <Price className=" font-bold">{price}</Price>
       </div>
-      <div className="flex justify-between border-b-2">
+      <div className="flex justify-between border-b-2 py-3">
         <Total className=" font-bold">{total}</Total>
         <Price2 className=" font-bold">{price2}</Price2>
       </div>
@@ -35,6 +35,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  border-radius: 0.3rem;
 `;
 
 const Button = styled.div`
