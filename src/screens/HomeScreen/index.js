@@ -120,7 +120,7 @@ const HomeScreen = () => {
             price2="$24,000"
           />
         </section>
-        <div>
+        <div className="p-5">
           <CartTotalsCard
             subtotal="SubTotals"
             price="$250"
