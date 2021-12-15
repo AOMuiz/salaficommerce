@@ -121,7 +121,14 @@ const HomeScreen = () => {
           />
         </section>
         <div>
-          <CartTotalsCard />
+          <CartTotalsCard
+            subtotal="SubTotals"
+            price="$250"
+            total="Totals"
+            price2="$370"
+            text="Shipping & taxes calculated at checkout"
+            buttontext="Proceed to Checkout"
+          />
         </div>
       </div>
       <DiscountItems />
