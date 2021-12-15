@@ -10,7 +10,7 @@ const CartTotalsCard = ({
   buttontext,
 }) => {
   return (
-    <Container className="grid-cols-4 flex just px-10">
+    <Container className="grid-cols-4 flex just px-10 py-3">
       <div className="flex justify-between">
         <div>{subtotal}</div>
         <div>{price}</div>
