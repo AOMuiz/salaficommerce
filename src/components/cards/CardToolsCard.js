@@ -20,7 +20,7 @@ const CartTotalsCard = ({
         <Total className=" font-bold">{total}</Total>
         <Price2 className=" font-bold">{price2}</Price2>
       </div>
-      <Text className=" font-thin">{text}</Text>
+      <Text className=" font-thin px-8">{text}</Text>
       <Button>{buttontext}</Button>
     </Container>
   );
