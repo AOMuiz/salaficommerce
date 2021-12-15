@@ -61,9 +61,6 @@ const HomeScreen = () => {
             price="$32.0"
           />
         </div>
-        <div>
-          <CartTotalsCard />
-        </div>
       </div>
       <div className="my-5">
         <h3 className="text-center text-4xl py-3 text-blue-900">
@@ -123,6 +120,9 @@ const HomeScreen = () => {
             price2="$24,000"
           />
         </section>
+        <div>
+          <CartTotalsCard />
+        </div>
       </div>
       <DiscountItems />
       <div className="my-5">
