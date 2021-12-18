@@ -4,7 +4,7 @@ import { colors } from "../../constants/colors";
 
 const CalculateShipping = ({ name, state, code, buttontext }) => {
   return (
-    <Container className="grid-cols-4 flex px-12 py-3 m-2">
+    <Container className="grid-cols-4 flex px-12 py-3">
       <div className="flex justify-between border-b-2 py-3">
         <SubTotal className=" font-bold">{name}</SubTotal>
       </div>
