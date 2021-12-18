@@ -19,16 +19,16 @@ function CartTable({ cart }) {
 
   return (
     <>
-      <div className="min-h-80 max-w-2xl my-4 sm:my-8 mx-auto w-full text-blue-900">
+      <div className="min-h-80 max-w-3xl my-4 sm:my-8 mx-auto w-full text-blue-900">
         <table className="mx-auto w-full">
           <thead>
             <tr className="uppercase text-xs sm:text-sm text-palette-primary border-b border-palette-light">
-              <th className="font-normal px-6 py-4">Product</th>
-              <th className="font-normal px-6 py-4">Quantity</th>
-              <th className="font-normal px-6 py-4 hidden sm:table-cell">
+              <th className="font-bold px-6 py-4">Product</th>
+              <th className="font-bold px-6 py-4">Quantity</th>
+              <th className="font-bold px-6 py-4 hidden sm:table-cell">
                 Price
               </th>
-              <th className="font-normal px-6 py-4">Remove</th>
+              <th className="font-bold px-6 py-4">Remove</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-palette-lighter">
