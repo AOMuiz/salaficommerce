@@ -24,10 +24,11 @@ function CartTable({ cart }) {
           <thead>
             <tr className="uppercase text-xs sm:text-sm text-palette-primary border-b border-palette-light">
               <th className="font-bold px-6 py-4">Product</th>
-              <th className="font-bold px-6 py-4">Quantity</th>
               <th className="font-bold px-6 py-4 hidden sm:table-cell">
                 Price
               </th>
+              <th className="font-bold px-6 py-4">Quantity</th>
+              <th className="font-bold px-6 py-4">Total</th>
               <th className="font-bold px-6 py-4">Remove</th>
             </tr>
           </thead>
@@ -49,6 +50,9 @@ function CartTable({ cart }) {
                   </span>
                 </Link>
               </td>
+              <td className="font-primary text-base font-light px-4 sm:px-6 py-4 hidden sm:table-cell">
+                <Price currency="$" num="20" numSize="text-lg" />
+              </td>
               <td className="font-primary font-medium px-4 sm:px-6 py-4">
                 <input
                   type="number"
@@ -63,7 +67,7 @@ function CartTable({ cart }) {
                 />
               </td>
               <td className="font-primary text-base font-light px-4 sm:px-6 py-4 hidden sm:table-cell">
-                <Price currency="$" num="20" numSize="text-lg" />
+                <Price currency="$" num="100" numSize="text-lg" />
               </td>
               <td className="font-primary font-medium px-4 sm:px-6 py-4">
                 <button
