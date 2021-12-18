@@ -19,7 +19,6 @@ import img3 from "../../assets/images/image-50.png";
 import lamp from "../../assets/images/lamp.png";
 import armchair from "../../assets/images/armchair.png";
 import Hero from "../../components/hero";
-import CartTotalsCard from "../../components/cards/CardToolsCard";
 
 const HomeScreen = () => {
   return (
@@ -120,16 +119,6 @@ const HomeScreen = () => {
             price2="$24,000"
           />
         </section>
-        <div className="p-5">
-          <CartTotalsCard
-            subtotal="SubTotals"
-            price="$250"
-            total="Totals"
-            price2="$370"
-            text="Shipping & taxes calculated at checkout"
-            buttontext="Proceed to Checkout"
-          />
-        </div>
       </div>
       <DiscountItems />
       <div className="my-5">
