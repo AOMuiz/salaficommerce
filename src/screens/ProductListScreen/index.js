@@ -1,14 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import axios from "axios";
 import { setProducts } from "../../redux/actions/productAction";
 
 import ProductHeroSection from "../../components/cards/ProductHeroSection";
 import ShopCard from "../../components/cards/ShopCard";
-import { useDispatch } from "react-redux";
+import Loader from "../../components/loader";
 
 const ProductList = () => {
   const products = useSelector((state) => state.allProducts.products);
+  const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
   // const { id, title, price, image, description } = products;
 
@@ -19,6 +21,7 @@ const ProductList = () => {
         console.log("Err", err);
       });
     dispatch(setProducts(response.data));
+    setLoading(false);
   };
 
   function truncateString(str, num) {
@@ -30,8 +33,7 @@ const ProductList = () => {
 
   useEffect(() => {
     fetchProducts();
-    return () => {};
-  });
+  }, []);
 
   console.log("Products:", products);
 
@@ -43,19 +45,26 @@ const ProductList = () => {
         info2="Products"
         info3="All Categories"
       />
-      <div className="flex justify-center items-center flex-col">
-        {products.map((product) => (
-          <ShopCard
-            key={product.id}
-            id={product.id}
-            title={product.title}
-            price={product.price}
-            image={product.image}
-            description={truncateString(product.description, 200)}
-            category={product.category}
-          />
-        ))}
-      </div>
+
+      {loading ? (
+        <div className="flex justify-center items-center flex-col">
+          <Loader />
+        </div>
+      ) : (
+        <div className="flex justify-center items-center flex-col">
+          {products.map((product) => (
+            <ShopCard
+              key={product.id}
+              id={product.id}
+              title={product.title}
+              price={product.price}
+              image={product.image}
+              description={truncateString(product.description, 200)}
+              category={product.category}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
