@@ -1,5 +1,4 @@
 import React from "react";
-// import { colors } from "../../constants/colors";
 import styled from "styled-components";
 
 const ProductDetailsCard = ({ name, desc, price, image }) => {
@@ -9,12 +8,12 @@ const ProductDetailsCard = ({ name, desc, price, image }) => {
         <div className="container px-5 py-24 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <img
-              alt="ecommerce"
-              className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+              alt={name}
+              className="lg:w-1/2 w-full lg:h-auto h-44 object-cover object-center rounded"
               src={image}
             />
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-              <h2 className="text-sm title-font text-gray-500 tracking-widest">
+              <h2 className="text-sm title-font text-gray-500 tracking-widest mb-2">
                 BRAND NAME
               </h2>
               <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">
@@ -181,4 +180,6 @@ const ProductDetailsCard = ({ name, desc, price, image }) => {
 
 export default ProductDetailsCard;
 
-const CardContainer = styled.div``;
+const CardContainer = styled.div`
+  /* height: 80vh; */
+`;

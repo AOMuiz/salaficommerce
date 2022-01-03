@@ -35,12 +35,14 @@ const ProductDetail = () => {
     return () => {
       dispatch(removeSelectedProduct());
     };
-  }, [productId]);
+  }, [dispatch, productId]);
 
   return (
     <section className="text-gray-600 body-font overflow-hidden flex justify-center items-center">
       {loading ? (
-        <Loader />
+        <div className="h-96 flex justify-center items-center flex-col">
+          <Loader />
+        </div>
       ) : (
         <ProductDetailsCard
           name={product.title}

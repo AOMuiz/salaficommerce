@@ -8,11 +8,15 @@ import ProductHeroSection from "../../components/cards/ProductHeroSection";
 import ShopCard from "../../components/cards/ShopCard";
 import Loader from "../../components/loader";
 
+const fetchAllProducts = async () => {
+  const res = await fetch("https://fakestoreapi.com/products");
+  return res.json();
+};
+
 const ProductList = () => {
   const products = useSelector((state) => state.allProducts.products);
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
-  // const { id, title, price, image, description } = products;
 
   const fetchProducts = async () => {
     const response = await axios
@@ -45,25 +49,28 @@ const ProductList = () => {
         info2="Products"
         info3="All Categories"
       />
-
       {loading ? (
-        <div className="flex justify-center items-center flex-col">
+        <div className="flex justify-center items-center flex-col h-96">
           <Loader />
         </div>
       ) : (
-        <div className="flex justify-center items-center flex-col">
-          {products.map((product) => (
-            <ShopCard
-              key={product.id}
-              id={product.id}
-              title={product.title}
-              price={product.price}
-              image={product.image}
-              description={truncateString(product.description, 200)}
-              category={product.category}
-            />
-          ))}
-        </div>
+        <section className=" body-font">
+          <div className="container px-5 py-24 mx-auto">
+            <div className="flex flex-wrap justify-center items-center">
+              {products.map((product) => (
+                <ShopCard
+                  key={product.id}
+                  id={product.id}
+                  title={product.title}
+                  price={product.price}
+                  image={product.image}
+                  description={truncateString(product.description, 200)}
+                  category={product.category}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
       )}
     </div>
   );

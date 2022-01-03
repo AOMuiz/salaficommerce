@@ -12,14 +12,14 @@ const ShopCard = ({ title, price, image, description, category, id }) => {
         </ImageContainer>
         <TextContainer>
           <Title>{title}</Title>
+          <p>Category: {category}</p>
           <PriceContainer className="py-2">
             <Price1>${price}</Price1>
             <Price2>
               <del>10% off</del>
             </Price2>
           </PriceContainer>
-          <p>Category: {category}</p>
-          <SubTitle className="py-2">{description}</SubTitle>
+          {/* <SubTitle className="py-2">{description}</SubTitle> */}
         </TextContainer>
       </CardContainer>
     </Link>
@@ -30,9 +30,10 @@ export default ShopCard;
 
 const CardContainer = styled.div`
   background-color: ${colors.pantonPurple};
-  width: 80rem;
-  height: 25rem;
+  width: 60rem;
+  height: 23rem;
   display: flex;
+  justify-content: center;
   margin-left: 20px;
   padding: 2rem 1rem 1rem 2rem;
   background-color: ${colors.white};
@@ -61,12 +62,12 @@ const PriceContainer = styled.div`
 
 const Price1 = styled.div`
   color: ${colors.offBlue};
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 `;
 
 const Price2 = styled.div`
   padding-left: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: lighter;
 `;
 
