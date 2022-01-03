@@ -1,25 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 import { colors } from "../../constants/colors";
+import { Link } from "react-router-dom";
 
-const ShopCard = ({ title, price, image, description, category }) => {
+const ShopCard = ({ title, price, image, description, category, id }) => {
   return (
-    <CardContainer className="my-5">
-      <ImageContainer>
-        <Image src={image} alt="" />
-      </ImageContainer>
-      <TextContainer>
-        <Title>{title}</Title>
-        <PriceContainer className="py-2">
-          <Price1>${price}</Price1>
-          <Price2>
-            <del>10% off</del>
-          </Price2>
-        </PriceContainer>
-        <p>Category: {category}</p>
-        <SubTitle className="py-2">{description}</SubTitle>
-      </TextContainer>
-    </CardContainer>
+    <Link to={`/product/${id}`}>
+      <CardContainer className="my-5">
+        <ImageContainer>
+          <Image src={image} alt="" />
+        </ImageContainer>
+        <TextContainer>
+          <Title>{title}</Title>
+          <PriceContainer className="py-2">
+            <Price1>${price}</Price1>
+            <Price2>
+              <del>10% off</del>
+            </Price2>
+          </PriceContainer>
+          <p>Category: {category}</p>
+          <SubTitle className="py-2">{description}</SubTitle>
+        </TextContainer>
+      </CardContainer>
+    </Link>
   );
 };
 
