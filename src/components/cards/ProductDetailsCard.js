@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/actions/cartAction";
 
 const ProductDetailsCard = ({ product }) => {
-  let { title, description, price, image, id } = product;
+  let { title, description, price, image, id, category } = product;
   const dispatch = useDispatch();
 
   return (
@@ -14,12 +14,12 @@ const ProductDetailsCard = ({ product }) => {
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <img
               alt={title}
-              className="lg:w-1/2 w-full lg:h-auto h-44 object-cover object-center rounded"
+              className="lg:w-1/2 w-full h-70 lg:h-auto object-cover object-center rounded"
               src={image}
             />
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <h2 className="text-sm title-font text-gray-500 tracking-widest mb-2">
-                BRAND NAME
+                {category}
               </h2>
               <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">
                 {title}
@@ -102,7 +102,7 @@ const ProductDetailsCard = ({ product }) => {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       stroke-Width="2"
-                      class="w-5 h-5"
+                      className="w-5 h-5"
                       viewBox="0 0 24 24"
                     >
                       <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
