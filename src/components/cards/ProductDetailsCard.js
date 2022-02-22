@@ -1,14 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/actions/cartAction";
 
-const ProductDetailsCard = ({ name, desc, price, image }) => {
+const ProductDetailsCard = ({ product }) => {
+  let { title, description, price, image, id } = product;
+  const dispatch = useDispatch();
+
   return (
     <CardContainer>
       <section className="text-gray-600 body-font overflow-hidden">
         <div className="container px-5 py-24 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <img
-              alt={name}
+              alt={title}
               className="lg:w-1/2 w-full lg:h-auto h-44 object-cover object-center rounded"
               src={image}
             />
@@ -17,7 +22,7 @@ const ProductDetailsCard = ({ name, desc, price, image }) => {
                 BRAND NAME
               </h2>
               <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">
-                {name}
+                {title}
               </h1>
               <div className="flex mb-4">
                 <span className="flex items-center">
@@ -117,7 +122,7 @@ const ProductDetailsCard = ({ name, desc, price, image }) => {
                   </a>
                 </span>
               </div>
-              <p className="leading-relaxed">{desc}</p>
+              <p className="leading-relaxed">{description}</p>
               <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
                 <div className="flex">
                   <span className="mr-3">Color</span>
@@ -154,7 +159,10 @@ const ProductDetailsCard = ({ name, desc, price, image }) => {
                 <span className="title-font font-medium text-2xl text-gray-900">
                   ${price}
                 </span>
-                <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
+                <button
+                  className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
+                  onClick={() => dispatch(addToCart(product))}
+                >
                   Add to Cart
                 </button>
                 <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">

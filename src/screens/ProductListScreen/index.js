@@ -8,11 +8,6 @@ import ProductHeroSection from "../../components/cards/ProductHeroSection";
 import ShopCard from "../../components/cards/ShopCard";
 import Loader from "../../components/loader";
 
-const fetchAllProducts = async () => {
-  const res = await fetch("https://fakestoreapi.com/products");
-  return res.json();
-};
-
 const ProductList = () => {
   const products = useSelector((state) => state.allProducts.products);
   const [loading, setLoading] = useState(true);

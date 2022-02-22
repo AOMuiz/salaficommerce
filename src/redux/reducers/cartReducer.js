@@ -7,14 +7,17 @@ export const cartReducer = (state = initialState, action) => {
     //INSIDE HOME/PRODUCT LIST COMPONENT
     case ActionTypes.ADD_TO_CART:
       addedItem = state.products.find((item) => item.id === action.id);
+      console.log(addedItem);
       //check if the action id exists in the addedItems
       let existed_item = state.addedItems.find((item) => action.id === item.id);
+      // if item is not new, add to cart, set quantity to 1
       if (existed_item) {
         addedItem.quantity += 1;
         return {
           ...state,
         };
       } else {
+        //set quantity property to 1
         addedItem.quantity = 1;
         //calculating the total
         let newTotal = state.total + addedItem.price;

@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import Loader from "../../components/loader";
 
@@ -44,12 +43,7 @@ const ProductDetail = () => {
           <Loader />
         </div>
       ) : (
-        <ProductDetailsCard
-          name={product.title}
-          desc={product.description}
-          price={product.price}
-          image={product.image}
-        />
+        <ProductDetailsCard product={product} />
       )}
       {/* https://dummyimage.com/400x400 */}
     </section>
