@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
+import allReducers from "./state/reducers";
 
 ReactDOM.render(
   <React.StrictMode>
