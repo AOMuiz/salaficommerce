@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # SalafiCommerce by SalafiDev Team
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Using API from [SWAPI](https://swapi.co).<br>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Using API from [STRAPI](https://strapi.com).<br>
 To see this project in action, go to [Demo SalafiCommerce](https://salaficommerce.netlify.app/) on line
 
 ## Preview
